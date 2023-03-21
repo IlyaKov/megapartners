@@ -1,0 +1,225 @@
+a, h2 {
+  color: inherit;
+}
+
+a {
+  transition: var(--main-transition);
+}
+
+input {
+  color: var(--main-font-color);
+}
+
+a:hover {
+  color: var(--secondary-font-color);
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 6rem;
+  text-transform: uppercase;
+}
+
+h1 span:last-of-type {
+  color: var(--secondary);
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  color: var(--secondary-font-color);
+
+  transition: var(--main-transition);
+}
+
+section:not(:first-of-type) {
+  padding: 6rem 0;
+}
+
+p {
+  font-size: 2rem;
+  color: var(--muted-main-font-color);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  padding: .875rem;
+
+  color: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+
+  border: var(--secondary-border);
+  border-radius: 2rem;
+
+  transition: var(--main-transition);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--hover-bg-color);
+}
+
+.cta-btn {
+  /*width: 100%;*/
+  padding: .8rem 4.5rem;
+
+  color: inherit;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: var(--btn-bg-color);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+
+  border: none;
+  border-radius: 3rem;
+
+  transition: var(--long-transition);
+}
+
+.cta-btn:hover {
+  cursor: pointer;
+  background-position: 0 0;
+}
+
+.bordered {
+  border: var(--secondary-border);
+}
+
+.thick-bordered {
+  border: var(--main-border);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.group > *:not(:first-child):not(:last-child) {
+  margin: 0 .875rem;
+}
+
+.group > :first-child {
+  margin-right: .875rem;
+}
+
+.group > :last-child {
+  margin-left: .875rem;
+}
+
+.input {
+  width: 100%;
+  position: relative;
+}
+
+input {
+  width: inherit;
+
+  padding: .8rem 2rem;
+
+  background-color: var(--input-bg-color);
+  border: var(--secondary-border);
+  border-radius: 1.75rem;
+}
+
+form input~span {
+  font-family: "Futura PT";
+  font-size: .75rem;
+
+  padding: .125rem .5rem;
+
+  position: absolute;
+  left: calc(2rem + 2px);
+  /* To make it exactly the same level as a placeholder,
+   ** you have to sum input left padding and border thickness
+   */
+  bottom: 2.5rem;
+
+  color: var(--dark-font-color);
+  background-color: #fff;
+
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.card {
+  margin: 0 .5rem;
+  padding: 1.75rem 3rem;
+  cursor: pointer;
+
+  border-radius: 3rem;
+
+  transition: var(--main-transition);
+}
+
+.card:hover {
+  background-color: var(--hover-bg-color);
+}
+
+.card * {
+  transition: var(--main-transition);
+}
+
+.tinted {
+  background-color: rgba(var(--font), .12);
+  backdrop-filter: blur(10px);
+}
+
+.card.tinted:hover h3 {
+  color: var(--dark-font-color);
+}
+
+.cross-icon {
+  cursor: pointer;
+
+  transition: var(--main-transition);
+}
+
+.cross-icon-selected {
+  transform: rotate(45deg);
+}
+
+.cross-icon-selected path {
+  fill: var(--secondary-font-color);
+}
+
+.accordion-container {
+  cursor: pointer;
+
+  padding: 1.5rem 2rem;
+
+  border-radius: 2.5rem;
+  overflow: hidden;
+}
+
+.accordion-container:not(:first-of-type) {
+  margin-top: 1.5rem;
+}
+
+.accordion__intro {
+  position: relative;
+
+  transition: var(--main-transition);
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: var(--main-transition);
+  opacity: 0;
+}
+
+.accordion-container__active .accordion__intro {
+  color: var(--secondary-font-color);
+}
+
+.accordion-container__active .accordion__content {
+  padding-top: 1.5rem;
+  opacity: 1;
+}
+

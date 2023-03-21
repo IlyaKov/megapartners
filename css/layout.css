@@ -1,0 +1,49 @@
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  font-family: var(--font-main);
+}
+
+#hero {
+  padding: 4rem;
+  min-height: 90vh;
+}
+
+@media (min-width: 320px) {
+  .container {
+    /* Important to override bootstrap defaults */
+    max-width: 94%!important;
+  }
+}
+
+@media (min-width: 840px) {
+  .container {
+    /* Important to override bootstrap defaults */
+    max-width: 85%!important;
+  }
+}
+
+/* Here and below is a setup for rem */
+@media (min-width:320px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (min-width:680px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 980px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1441px) {
+  html {
+    font-size: initial;
+  }
+}

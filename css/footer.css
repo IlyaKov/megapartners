@@ -1,0 +1,48 @@
+footer.thick-bordered {
+  padding: 2.5rem 0 1.5rem 0;
+  background-color: var(--tint-main);
+  border-bottom: none;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+footer nav .group > *:not(:first-child):not(:last-child) {
+  margin: 0 1rem;
+}
+
+footer nav .group > :first-child {
+  margin-right: 1rem;
+}
+
+footer nav .group > :last-child {
+  margin-left: 1rem;
+}
+
+footer .group > *:not(:first-child):not(:last-child) {
+  margin: 0 .5rem;
+}
+
+footer .group > :first-child {
+  margin-right: .5rem;
+}
+
+footer .group > :last-child {
+  margin-left: .5rem;
+}
+
+footer span {
+  color: var(--muted-main-font-color);
+}
+
+footer header {
+  width: 100%;
+  text-align: end;
+}
+
+footer .logo {
+  max-width: 25%;
+}

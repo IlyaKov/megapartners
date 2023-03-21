@@ -1,0 +1,27 @@
+:root {
+  --main: #110A1D;
+  --tint-main: #1E1231;
+  --secondary: #478BF9;
+  --font: 255,255,255;
+  --main-bg-color: var(--main);
+  --hover-bg-color: var(--secondary);
+
+  --main-font-color: rgb(var(--font));
+  --muted-main-font-color: rgba(var(--font), .6);
+  --dark-font-color: var(--main);
+  --secondary-font-color: var(--secondary);
+
+  --btn-bg-color: linear-gradient(255.96deg, var(--secondary), var(--secondary), #9DADF2 );
+  --input-bg-color: var(--main);
+
+  --main-border-thickness: 4px;
+  --secondary-border-thickness: 2px;
+  --main-border: var(--main-border-thickness) solid var(--secondary);
+  --secondary-border: var(--secondary-border-thickness) solid var(--secondary);
+
+  --main-transition: all .3s ease-in-out;
+  --long-transition: all .5s ease-in-out;
+
+  --font-main: 'Lexend Regular';
+  --font-secondary: 'Futura PT'
+}

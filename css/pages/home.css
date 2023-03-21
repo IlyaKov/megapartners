@@ -1,0 +1,111 @@
+#about .card, #about .svg {
+  flex: 1;
+}
+
+#about .svg object {
+  width: 20rem;
+  height: 100%;
+}
+
+#about ul {
+  margin: 0 -.5rem;
+}
+
+#about .card:hover h3 {
+  color: var(--dark-font-color);
+}
+
+.about_cards {
+  flex: 4;
+}
+
+#brands ul li {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+#brands .thick-bordered {
+  border-radius: 4.5rem;
+}
+
+#brands .card, #commissions .card.tinted {
+  cursor: initial;
+  background-color: rgba(var(--font), .12);
+  backdrop-filter: blur(10px);
+}
+
+#brands object {
+  width: 100%;
+}
+
+#brands .splide__pagination {
+  margin: 0 auto;
+  width: 6.5rem;
+  padding: .5rem;
+
+  position: relative;
+  top: 1rem;
+
+  background-color: rgba(var(--font), .12);
+  backdrop-filter: blur(10px);
+
+  border-radius: 2rem;
+}
+
+#brands .splide__pagination__page {
+  width: .75rem;
+  height: .75rem;
+  margin: 0;
+
+  background: rgba(var(--font), .2);
+}
+
+#brands .splide__pagination li:not(:first-of-type):not(:last-of-type) {
+  margin: 0 .625rem;
+}
+
+#brands .splide__pagination__page.is-active {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background: var(--main-font-color);
+  border: .375rem solid var(--secondary-font-color);
+  opacity: 1;
+
+  transform: none;
+}
+
+#commissions ul+div, #commissions ul {
+  flex: 1;
+}
+
+#commissions li:not(:first-of-type):not(:last-of-type) {
+  margin: 1rem 0;
+}
+
+#commissions .card.bg-transparent:hover * {
+  color: var(--dark-font-color);
+}
+
+#commissions .card.tinted:hover h3 {
+  color: var(--hover-bg-color);
+}
+
+#events .splide__track {
+  overflow: visible;
+}
+
+#events .my-carousel-progress {
+  background: var(--muted-main-font-color);
+  border-radius: 10px;
+}
+
+#events .my-carousel-progress-bar {
+  background: var(--secondary-font-color);
+  height: 8px;
+  border-radius: 10px;
+  transition: var(--main-transition);
+  width: 0;
+}

@@ -1,0 +1,12 @@
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  z-index: 99;
+}
+
+header .bordered {
+  border-radius: 4rem;
+  background-color: var(--main-bg-color);
+}
