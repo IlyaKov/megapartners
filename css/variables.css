@@ -6,6 +6,9 @@
   --main-bg-color: var(--main);
   --hover-bg-color: var(--secondary);
 
+  --font-size-xl: 3rem;
+  --font-size-l: 2rem;
+
   --main-font-color: rgb(var(--font));
   --muted-main-font-color: rgba(var(--font), .6);
   --dark-font-color: var(--main);

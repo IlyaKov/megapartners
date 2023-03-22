@@ -4,6 +4,35 @@ body {
   font-family: var(--font-main);
 }
 
+section {
+  z-index: 1;
+}
+
+section .bg {
+  z-index: 3;
+}
+
+section > .container, #about {
+  position: relative;
+  z-index: 5;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+#hero, #brands, #commissions, #faq {
+  position: relative;
+}
+
 #hero .container {
   padding: 4rem;
   min-height: 90vh;
