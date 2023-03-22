@@ -1,3 +1,21 @@
+#hero, #brands {
+  position: relative;
+}
+
+#hero .circle {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#hero .light {
+  width: 130%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 #about .card, #about .svg {
   flex: 1;
 }
@@ -17,6 +35,15 @@
 
 .about_cards {
   flex: 4;
+}
+
+#brands .circle {
+  margin: 0 auto;
+  width: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 #brands ul li {
@@ -93,6 +120,10 @@
   color: var(--hover-bg-color);
 }
 
+#events {
+  overflow: hidden;
+}
+
 #events .splide__track {
   overflow: visible;
 }
@@ -108,4 +139,19 @@
   border-radius: 10px;
   transition: var(--main-transition);
   width: 0;
+}
+
+#contact {
+  position: relative;
+}
+
+#contact {
+  background-image: url("../../assets/backgrounds/footer.svg");
+  background-size: cover;
+}
+
+@media screen and (min-width: 680px) {
+  #hero .light {
+    width: 55%;
+  }
 }
