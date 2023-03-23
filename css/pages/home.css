@@ -12,6 +12,36 @@
   bottom: 0;
 }
 
+#hero .blog {
+  padding: 1.5rem;
+
+  max-width: 40%;
+  max-height: 38rem;
+
+  font-size: 1.5rem;
+
+  overflow: scroll;
+  border: 3px solid var(--secondary);
+  border-radius: 6.25rem;
+
+  backdrop-filter: blur(10px);
+  background: var(rgba(var(--font), .12));
+}
+
+#hero .blog::-webkit-scrollbar-track {
+  margin-top: 5rem;
+}
+
+#hero .card:not(:last-of-type) {
+  margin: 0 0 1rem 0;
+
+  border-radius: 12.25rem;
+}
+
+#hero .card small {
+  color: var(--muted-main-font-color);
+}
+
 #about .card, #about .svg {
   flex: 1;
 }
@@ -217,12 +247,42 @@
 }
 
 #contact {
-  position: relative;
-}
-
-#contact {
   background-image: url("../../assets/backgrounds/footer.svg");
   background-size: cover;
+}
+
+#contact form {
+  border-radius: 4rem;
+  backdrop-filter: blur(10px);
+  background: rgba(var(--font), .2);
+}
+
+#contact form header h4 {
+  color: var(--secondary-font-color);
+}
+
+#contact form header span {
+  color: var(--muted-main-font-color);
+}
+
+#contact .form li {
+  width: 100%;
+}
+
+#contact form button {
+  width: 100%;
+}
+
+#contact .group > *:not(:first-child):not(:last-child) {
+  margin: 0 .25rem;
+}
+
+#contact .group > :first-child {
+  margin-right: .25rem;
+}
+
+#contact .group > :last-child {
+  margin-left: .25rem;
 }
 
 @media screen and (min-width: 680px) {

@@ -33,8 +33,8 @@ h4 {
   position: relative;
 }
 
-#hero .container {
-  padding: 4rem;
+#hero {
+  padding-top: 4rem;
   min-height: 90vh;
 }
 

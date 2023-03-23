@@ -79,11 +79,14 @@ events.mount();
 const brands = new Splide( '#brands .splide', {
   perPage: 1,
   arrows: false,
+  start: 0,
+  speed: 500,
+  rewind: true,
   snap: true,
   drag: true,
   dragMinThreshold: {
-    mouse: 20,
-    touch: 30,
+    mouse: 120,
+    touch: 60,
   },
 } );
 
