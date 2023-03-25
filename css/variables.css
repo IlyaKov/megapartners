@@ -6,6 +6,12 @@
   --main-bg-color: var(--main);
   --hover-bg-color: var(--secondary);
 
+  --sticky-header__z-index: 10;
+  --sidebar__z-index: 7;
+  --content-layer__z-index: 5;
+  --background-layer__z-index: 3;
+  --base-layer__z-index: 1;
+
   --font-size-xl: 3rem;
   --font-size-l: 2rem;
 

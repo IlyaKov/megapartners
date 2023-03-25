@@ -5,16 +5,16 @@ body {
 }
 
 section {
-  z-index: 1;
+  z-index: var(--base-layer__z-index);
 }
 
 section .bg {
-  z-index: 3;
+  z-index: var(--background-layer__z-index);
 }
 
 section > .container, #about {
   position: relative;
-  z-index: 5;
+  z-index: var(--content-layer__z-index);
 }
 
 h2 {
@@ -55,7 +55,7 @@ h4 {
 /* Here and below is a setup for rem */
 @media (min-width:320px) {
   html {
-    font-size: 8px;
+    font-size: 9px;
   }
 }
 
@@ -65,11 +65,11 @@ h4 {
   }
 }
 
-@media (min-width: 980px) {
-  html {
-    font-size: 9px;
-  }
-}
+/*@media (min-width: 980px) {*/
+/*  html {*/
+/*    font-size: 10px;*/
+/*  }*/
+/*}*/
 
 @media (min-width: 1441px) {
   html {
