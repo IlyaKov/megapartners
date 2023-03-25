@@ -15,7 +15,7 @@
 #hero .blog {
   padding: 1.5rem;
 
-  max-width: 33%;
+  width: 100%;
   max-height: 38rem;
 
   font-size: 1.5rem;
@@ -26,6 +26,12 @@
 
   backdrop-filter: blur(10px);
   background: var(rgba(var(--font), .12));
+}
+
+@media screen and (min-width: 980px) {
+  #hero .blog {
+    max-width: 33%;
+  }
 }
 
 #hero .blog::-webkit-scrollbar-track {
