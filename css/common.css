@@ -179,6 +179,22 @@ p {
   text-align: center;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.filters {
+  border-radius: 8rem;
+}
+
+.filters .btn {
+  border: none;
+}
+
+.filters .btn.selected {
+  background: var(--hover-bg-color);
+}
+
 .group > *:not(:first-child):not(:last-child) {
   margin: 0 .875rem;
 }

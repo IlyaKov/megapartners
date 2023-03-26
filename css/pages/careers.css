@@ -1,3 +1,7 @@
+#offer {
+  position: relative;
+}
+
 #hero {
   padding: 0;
   position: relative;
@@ -26,13 +30,52 @@
   background-color: var(--tint-main);
 }
 
+#positions .card {
+  margin: 0;
+
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+#positions .card small {
+  color: var(--muted-main-font-color);
+}
+
+#positions .card:hover small {
+  color: var(--dark-font-color);
+}
+
+#positions .card:hover .time-tag, #positions .card:hover .location-tag {
+  background-color: white;
+}
+
+#positions .card:hover .time-tag, #positions .card:hover .location-tag {
+  color: var(--dark-font-color);
+}
+
+#positions .card:hover .time-tag path, #positions .card:hover .location-tag path {
+  fill: var(--main-bg-color);
+}
+
 @media (min-width:980px) {
-  #offer .card {
+  #offer .card, #positions .card {
+    width: 45%;
+    max-width: calc(50% - 10px);
     flex-basis: 45%;
   }
 }
 
-#offer ul {
+#offer .bg.light {
+  width: 45%;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+#offer ul, #positions .filtered-content {
   gap: 2rem;
 }
 
@@ -76,6 +119,40 @@
 
 #offer .card:hover .coin-number {
   color: var(--secondary-font-color);
+}
+
+#cv {
+  background-image: url("../../assets/backgrounds/footer.svg");
+  background-size: cover;
+}
+
+#cv form {
+  border-radius: 4rem;
+  backdrop-filter: blur(10px);
+  background: rgba(var(--font), .2);
+}
+
+#cv form li {
+
+  width: 100%;
+}
+
+#cv .group > *:not(:first-child):not(:last-child) {
+  margin: 0 .25rem;
+}
+
+#cv .group > :first-child {
+  margin-right: .25rem;
+}
+
+#cv .group > :last-child {
+  margin-left: .25rem;
+}
+
+.location-tag, .time-tag {
+  color: var(--secondary-font-color);
+  padding: .75rem;
+  border-radius: 3rem;
 }
 
 @keyframes rotate {
