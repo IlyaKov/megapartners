@@ -52,8 +52,12 @@
   flex: 1;
 }
 
+#about .svg {
+  max-width: 20%;
+}
+
 #about .svg object {
-  height: 100%;
+  width: 100%;
 }
 
 #about ul {
@@ -271,7 +275,11 @@
   color: var(--muted-main-font-color);
 }
 
-#contact .form li {
+#contact .group * {
+  margin: 0;
+}
+
+#contact form li {
   width: 100%;
 }
 
@@ -279,20 +287,32 @@
   width: 100%;
 }
 
-#contact .group > *:not(:first-child):not(:last-child) {
-  margin: 0 .25rem;
-}
-
-#contact .group > :first-child {
-  margin-right: .25rem;
-}
-
-#contact .group > :last-child {
-  margin-left: .25rem;
-}
-
 @media screen and (min-width: 680px) {
   #hero .light {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  #contact form li {
+    margin: 0;
+  }
+
+  #contact .group > *:not(:first-child):not(:last-child) {
+    margin: 0 .25rem;
+  }
+
+  #contact .group > :first-child {
+    margin-right: .25rem;
+  }
+
+  #contact .group > :last-child {
+    margin-left: .25rem;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  #about .svg {
     width: 55%;
   }
 }

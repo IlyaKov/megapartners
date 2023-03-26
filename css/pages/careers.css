@@ -159,26 +159,35 @@
 }
 
 #cv form li {
-
   width: 100%;
-}
-
-#cv .group > *:not(:first-child):not(:last-child) {
-  margin: 0 .25rem;
-}
-
-#cv .group > :first-child {
-  margin-right: .25rem;
-}
-
-#cv .group > :last-child {
-  margin-left: .25rem;
 }
 
 .location-tag, .time-tag {
   color: var(--secondary-font-color);
   padding: .75rem;
   border-radius: 3rem;
+}
+
+#cv .group * {
+  margin: 0;
+}
+
+@media screen and (min-width: 980px) {
+  #cv form li {
+    margin: 0;
+  }
+
+  #cv .group > *:not(:first-child):not(:last-child) {
+    margin: 0 .25rem;
+  }
+
+  #cv .group > :first-child {
+    margin-right: .25rem;
+  }
+
+  #cv .group > :last-child {
+    margin-left: .25rem;
+  }
 }
 
 @keyframes rotate {
