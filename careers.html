@@ -66,10 +66,10 @@
   </div>
 </aside>
 
-<section id="hero" class="d-flex flex-column align-items-center justify-content-center">
-  <object type="image/svg+xml" data="assets/icons/careers_logo.svg"></object>
+<section id="hero" class="d-flex flex-column align-items-center justify-content-center px-5">
+  <object class="careers-logo" type="image/svg+xml" data="assets/icons/careers_logo.svg"></object>
   <object class="bg circle" type="image/svg+xml" data="assets/backgrounds/careers_circle.svg"></object>
-  <h2>Make yourself at home</h2>
+  <h2 class="text-center">Make yourself at home</h2>
 </section>
 
 <section id="offer">
@@ -151,7 +151,10 @@
 
 <section id="positions">
   <div class="container">
-    <h2 class="text-center mb-5">Open positions</h2>
+    <div class="title-bg">
+      <object class="bg circle" type="image/svg+xml" data="assets/backgrounds/careers_positions_circle.svg"></object>
+      <h2 class="text-center mb-5">Open positions</h2>
+    </div>
     <ul class="filters thick-bordered d-flex group px-4 py-2">
       <li>
         <button class="btn" data-filter="all">View all</button>
@@ -265,20 +268,23 @@
 
 <section id="cv">
   <div class="container">
-    <h2 class="text-center">There is no suitable vacancy?</h2>
+    <div class="title-bg">
+      <object class="bg light" type="image/svg+xml" data="assets/backgrounds/commissions_cv_light.svg"></object>
+      <h2 class="text-center">There is no suitable vacancy?</h2>
+    </div>
     <p class="text-center">Send us your CV and we will contact you.</p>
     <div class="container">
       <form action="#" class="thick-bordered my-5 py-5 w-100">
         <div class="container d-flex flex-column align-items-center">
           <div class="w-100">
-            <ul class="d-flex group justify-content-between">
+            <ul class="d-flex flex-column flex-md-row group justify-content-between">
               <li>
                 <div class="input">
                   <input placeholder="Your name..." type="text">
                   <span>Name:</span>
                 </div>
               </li>
-              <li>
+              <li class="mt-3 mt-md-0">
                 <div class="input">
                   <input placeholder="Your email..." type="email">
                   <span>Email:</span>
@@ -289,14 +295,14 @@
               <textarea rows="4" placeholder="Tell us a little about yourself..." type="text" ></textarea>
               <span>About yourself:</span>
             </div>
-            <ul class="d-flex group justify-content-between mt-3">
+            <ul class="d-flex flex-column flex-md-row group justify-content-between mt-3">
               <li>
                 <div class="input">
                   <input placeholder="Select file" type="text">
                   <span>Name:</span>
                 </div>
               </li>
-              <li>
+              <li class="mt-3 mt-md-0">
                 <div class="input">
                   <button class="cta-btn w-100">Send CV</button>
                 </div>

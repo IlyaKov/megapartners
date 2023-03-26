@@ -1,4 +1,4 @@
-#offer {
+#offer, #positions .title-bg, #cv .title-bg {
   position: relative;
 }
 
@@ -10,6 +10,11 @@
   background-image: url("../../assets/backgrounds/careers_hero.svg");
   background-size: cover;
   background-position: center;
+}
+
+#hero .careers-logo {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 #hero .bg.circle {
@@ -28,6 +33,27 @@
 
   border-radius: 12.25rem;
   background-color: var(--tint-main);
+}
+
+#positions .bg.circle {
+  width: 100%;
+  margin: auto;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#cv .bg.light {
+  width: 100%;
+  margin: auto;
+
+  position: absolute;
+  bottom: -8rem;
+  left: 0;
+  right: 0;
 }
 
 #positions .card {
@@ -61,7 +87,7 @@
 @media (min-width:980px) {
   #offer .card, #positions .card {
     width: 45%;
-    max-width: calc(50% - 10px);
+    max-width: calc(50% - 15px);
     flex-basis: 45%;
   }
 }
