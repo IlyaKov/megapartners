@@ -1,3 +1,7 @@
+const copyToCB = document.querySelector('.copy-to-clipboard')
+
+copyToCB.addEventListener('click', () => navigator.clipboard.writeText(window.location.href))
+
 const news = new Splide( '#other_news .splide', {
   perPage: 3,
   start: 0,
@@ -29,10 +33,12 @@ const news = new Splide( '#other_news .splide', {
 
 news.mount();
 
-const elementsToChangeBackgroundToFont = ['body']
-const elementsToChangeBackgroundToMain = ['.info-tag']
-const elementsToChangeColorToMain = ['p', 'h2', '.side_info small']
-const elementsToChangeColorToFont = ['.info-tag']
+const elementsToChangeBackgroundToFont = ['body', '.subscribe-form input']
+const elementsToChangeBackgroundToMain = ['.info-tag', '.subscribe-form .input span', '.subscribe-form .input span']
+const elementsToChangeColorToMain = ['p', 'h2', '.subscribe-form header']
+const elementsToChangeColorToFont = ['.info-tag', '.subscribe-form .input span']
+const svgFillToMain = ['.share-panel svg path:first-child']
+const svgFillToFont = ['.share-panel svg path:last-child']
 
 const lightModeToggle = document.querySelector('.theme-toggle')
 const mainBgColor = getComputedStyle(document.body).getPropertyValue('--main-bg-color')
@@ -40,6 +46,7 @@ const mainFontColor = getComputedStyle(document.body).getPropertyValue('--main-f
 
 const changeElementsColor = (elements, color) => document.querySelectorAll(elements).forEach(elem => elem.style.color = color)
 const changeElementsBackground = (elements, color) => document.querySelectorAll(elements).forEach(elem => elem.style.backgroundColor = color)
+const changeSvgFill = (elements, color) => document.querySelectorAll(elements).forEach(elem => elem.style.fill = color)
 
 const handleLightMode = () => {
   const isDarkMode = Number(document.body.style.backgroundColor !== mainFontColor)
@@ -52,6 +59,8 @@ const handleLightMode = () => {
   elementsToChangeColorToFont.forEach(element => changeElementsColor(element, colorsSetForLightMode[isDarkMode]))
   elementsToChangeBackgroundToFont.forEach(element => changeElementsBackground(element, colorsSetForLightMode[isDarkMode]))
   elementsToChangeBackgroundToMain.forEach(element => changeElementsBackground(element, colorsSetForDarkMode[isDarkMode]))
+  svgFillToMain.forEach(element => changeSvgFill(element, colorsSetForDarkMode[isDarkMode]))
+  svgFillToFont.forEach(element => changeSvgFill(element, colorsSetForLightMode[isDarkMode]))
 }
 
 lightModeToggle.addEventListener('click', handleLightMode)

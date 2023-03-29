@@ -1,7 +1,7 @@
 #news_content {
   padding-top: 12rem;
   background-image: url("../../assets/backgrounds/single_news_sidebar.svg");
-  background-size: 70%;
+  background-size: 55%;
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -50,11 +50,11 @@
 }
 
 #news_content .container .side_info {
-  flex-basis: 33%;
+  flex-basis: 25%;
 }
 
 #news_content .container .content {
-  flex-basis: 65%;
+  flex-basis: 75%;
 }
 
 .splide__slide {
@@ -112,4 +112,30 @@
 
 .splide__slide:hover .shadow {
   opacity: .8;
+}
+
+.subscribe-form {
+  border-radius: 3.5rem;
+  background: rgba(var(--font), 0.12);
+}
+
+.subscribe-form header {
+  color: var(--main-font-color);
+  text-transform: uppercase;
+}
+
+.share-panel li path {
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.share-panel li:hover svg path:first-child {
+  fill: var(--secondary-font-color)!important;
+/**
+ *important should stay to not loose hover effect while switching between themes
+ */
+}
+
+.share-panel li:hover svg path:last-child {
+  fill: var(--main-font-color);
 }
