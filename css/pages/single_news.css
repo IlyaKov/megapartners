@@ -1,5 +1,9 @@
 #news_content {
   padding-top: 12rem;
+  background-image: url("../../assets/backgrounds/single_news_sidebar.svg");
+  background-size: 70%;
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
 #news_content a {
