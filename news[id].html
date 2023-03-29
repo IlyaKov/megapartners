@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/pages/single_news.css">
+  <link rel="stylesheet" href="lib/splide/dist/css/splide.min.css">
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-grid.css">
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-grid.min.css">
   <title>Megapartners | News single page</title>
@@ -70,13 +71,13 @@
   <div class="container d-flex">
     <div class="content d-flex flex-column">
       <h2>MEGAPARTNERS COLLABORATES WITH POP ARTIST THUMBS FOR ICE LONDON</h2>
-      <ul class="mt-3 tags d-flex align-items-center justify-content-start">
+      <ul class="mt-3 tags d-flex justify-content-start">
         <li class="news-tag d-flex align-items-center">
           <object type="image/svg+xml" data="assets/icons/price_tag.svg"></object>
           <span class="ms-2">Event</span>
         </li>
-        <li class="mx-3">20.02.2022</li>
-        <li>1032 views</li>
+        <li class="info-tag mx-3 d-flex align-items-center ">20.02.2022</li>
+        <li class="info-tag d-flex align-items-center">1032 views</li>
       </ul>
       <p>
         MEGAPARTNERS, is excited to announce its exclusive collaboration with <a href="#">London-based artist Thumbs</a> for the upcoming ICE London event. With this collaboration, MEGAPARTNERS is setting a precedent for future partnerships with local artists, and plans to bring similar collaborations to all major iGaming events in 2023, aimed to support talents and provide a space for experiments.
@@ -101,7 +102,18 @@
       </p>
     </div>
     <aside class="side_info">
-      dark
+      <div class="theme-palette">
+        <small>Dark/Light Theme</small>
+        <div class="theme-toggle mt-2">
+          <div class="theme-toggle_background"></div>
+          <svg class="moon ms-3" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.52042 0.500027C8.0305 0.501387 8.10551 1.22445 7.68387 1.51151C6.13656 2.56495 5.12044 4.34064 5.12044 6.35366C5.12044 9.58655 7.74122 12.2073 10.9741 12.2073C11.5525 12.2073 12.1113 12.1234 12.639 11.9672C13.1282 11.8223 13.6404 12.3375 13.3182 12.7331C11.943 14.4216 9.84742 15.5 7.5 15.5C3.35786 15.5 0 12.1421 0 8C0 3.85786 3.35786 0.5 7.5 0.5C7.50681 0.5 7.51362 0.500009 7.52042 0.500027Z" fill="#478BF9"/>
+          </svg>
+          <svg class="sun me-3" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.89232 3.11707L2.72083 1.89104L1.80316 2.85679L2.96814 4.08282L3.89232 3.11707ZM2.09603 6.99378H0.143555V8.36364H2.09603V6.99378ZM7.95347 0.178711H6.65182V2.19926H7.95347V0.178711ZM12.8021 2.85679L11.8845 1.89104L10.7195 3.11707L11.6371 4.08282L12.8021 2.85679ZM10.713 12.2404L11.878 13.4732L12.7956 12.5075L11.6241 11.2815L10.713 12.2404ZM12.5093 6.99378V8.36364H14.4617V6.99378H12.5093ZM7.30265 3.56912C5.14841 3.56912 3.39769 5.41159 3.39769 7.67871C3.39769 9.94583 5.14841 11.7883 7.30265 11.7883C9.45688 11.7883 11.2076 9.94583 11.2076 7.67871C11.2076 5.41159 9.45688 3.56912 7.30265 3.56912ZM6.65182 15.1787H7.95347V13.1582H6.65182V15.1787ZM1.80316 12.5006L2.72083 13.4664L3.88581 12.2335L2.96814 11.2678L1.80316 12.5006Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
     </aside>
   </div>
 </section>
@@ -109,7 +121,54 @@
 <section id="other_news">
   <div class="container d-flex flex-column align-items-center">
     <h2>Other News</h2>
-    <button class="cta-btn">See all news</button>
+    <section class="splide mt-4">
+      <div class="splide__track">
+        <ul class="splide__list flex-column flex-md-row">
+          <li class="splide__slide mb-3 mb-md-0 p-4 thick-bordered d-flex flex-column justify-content-end" style="background-image: url('assets/backgrounds/fallback_news_image.svg')">
+            <div class="shadow"></div>
+            <small class="post-date mb-2">20.03.2023</small>
+            <h5>Payment methods: Skrill, Neteller, webmoney, Bank transfer</h5>
+          </li>
+          <li class="splide__slide mb-3 mb-md-0 p-4 thick-bordered d-flex flex-column justify-content-end" style="background-image: url('assets/backgrounds/fallback_news_image.svg')">
+            <div class="shadow"></div>
+            <small class="post-date mb-2">20.03.2023</small>
+            <h5>Payment methods: Skrill, Neteller, webmoney, Bank transfer</h5>
+          </li>
+          <li class="splide__slide mb-3 mb-md-0 p-4 thick-bordered d-flex flex-column justify-content-end" style="background-image: url('assets/backgrounds/fallback_news_image.svg')">
+            <div class="shadow"></div>
+            <small class="post-date mb-2">20.03.2023</small>
+            <h5>Payment methods: Skrill, Neteller, webmoney, Bank transfer</h5>
+          </li>
+          <li class="splide__slide mb-3 mb-md-0 p-4 thick-bordered d-flex flex-column justify-content-end" style="background-image: url('assets/backgrounds/fallback_news_image.svg')">
+            <div class="shadow"></div>
+            <small class="post-date mb-2">20.03.2023</small>
+            <h5>Payment methods: Skrill, Neteller, webmoney, Bank transfer</h5>
+          </li>
+          <li class="splide__slide mb-3 mb-md-0 p-4 thick-bordered d-flex flex-column justify-content-end" style="background-image: url('assets/backgrounds/fallback_news_image.svg')">
+            <div class="shadow"></div>
+            <small class="post-date mb-2">20.03.2023</small>
+            <h5>Payment methods: Skrill, Neteller, webmoney, Bank transfer</h5>
+          </li>
+          <li class="splide__slide mb-3 mb-md-0 p-4 thick-bordered d-flex flex-column justify-content-end" style="background-image: url('assets/backgrounds/fallback_news_image.svg')">
+            <div class="shadow"></div>
+            <small class="post-date mb-2">20.03.2023</small>
+            <h5>Payment methods: Skrill, Neteller, webmoney, Bank transfer</h5>
+          </li>
+        </ul>
+      </div>
+
+      <div class="splide__arrows d-none d-md-block">
+        <svg class="splide__arrow splide__arrow--prev left" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="20" transform="matrix(-1 0 0 1 40 0)" fill="#478BF9"/>
+          <path d="M15 20L23 12V28L15 20Z" fill="white"/>
+        </svg>
+        <svg class="splide__arrow splide__arrow--next right" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="20" fill="#478BF9"/>
+          <path d="M25 20L17 12V28L25 20Z" fill="white"/>
+        </svg>
+      </div>
+    </section>
+    <button class="cta-btn mt-5">See all news</button>
   </div>
 </section>
 
@@ -152,5 +211,7 @@
 </footer>
 
 <script src="index.js"></script>
+<script src="lib/splide/dist/js/splide.min.js"></script>
+<script src="js/single-post.js"></script>
 </body>
 </html>

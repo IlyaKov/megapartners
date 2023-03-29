@@ -3,6 +3,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  transition: var(--main-transition);
 }
 
 h4 {
@@ -381,4 +383,53 @@ form input~span, form textarea~span {
   font-size: 2rem;
 
   border-radius: 4rem;
+}
+
+.theme-toggle {
+  cursor: pointer;
+
+  max-width: 8rem;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: .75rem;
+
+  border-radius: 2rem;
+  background-color: var(--hover-bg-color);
+}
+
+.theme-toggle * {
+  transition: var(--long-transition);
+}
+
+.theme-toggle .theme-toggle_background {
+  padding: .375rem;
+
+  width: 45%;
+  height: 72%;
+
+  position: absolute;
+  left: .375rem;
+
+  border-radius: 1.5rem;
+  background-color: var(--main-font-color);
+}
+
+.theme-toggle .sun, .theme-toggle .moon {
+  z-index: 3;
+}
+
+.theme-toggle.light .theme-toggle_background {
+  transform: translateX(100%);
+}
+
+.theme-toggle.light .sun path {
+  fill: var(--secondary-font-color);
+}
+
+.theme-toggle.light .moon path {
+  fill: var(--main-font-color);
 }

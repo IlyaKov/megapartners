@@ -1,11 +1,11 @@
 :root {
-  --main: #110A1D;
-  --tint-main: #1E1231;
-  --secondary: #478BF9;
-  --font: 255,255,255;
-  --main-bg-color: var(--main);
-  --hover-bg-color: var(--secondary);
-  --background-purple: #9DADF2;
+  --main:#110A1D;
+  --tint-main:#1E1231;
+  --secondary:#478BF9;
+  --font:255, 255, 255;
+  --main-bg-color:var(--main);
+  --hover-bg-color:var(--secondary);
+  --background-purple:#9DADF2;
 
   --sticky-header__z-index: 100;
   --sidebar__z-index: 90;
@@ -16,10 +16,10 @@
   --font-size-xl: 3rem;
   --font-size-l: 2rem;
 
-  --main-font-color: rgb(var(--font));
-  --muted-main-font-color: rgba(var(--font), .6);
-  --dark-font-color: var(--main);
-  --secondary-font-color: var(--secondary);
+  --main-font-color:rgb(var(--font));
+  --muted-main-font-color:rgba(var(--font), .6);
+  --dark-font-color:var(--main);
+  --secondary-font-color:var(--secondary);
 
   --btn-bg-color: linear-gradient(255.96deg, var(--secondary), var(--secondary), #9DADF2 );
   --input-bg-color: var(--main);
