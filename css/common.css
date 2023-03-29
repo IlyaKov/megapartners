@@ -424,6 +424,10 @@ form input~span, form textarea~span {
   z-index: 3;
 }
 
+.theme-toggle svg, .theme-toggle path, .theme-toggle_background {
+  pointer-events: none;
+}
+
 .theme-toggle.light .theme-toggle_background {
   transform: translateX(100%);
 }
