@@ -5,9 +5,10 @@
   --font: 255,255,255;
   --main-bg-color: var(--main);
   --hover-bg-color: var(--secondary);
+  --background-purple: #9DADF2;
 
-  --sticky-header__z-index: 10;
-  --sidebar__z-index: 7;
+  --sticky-header__z-index: 100;
+  --sidebar__z-index: 90;
   --content-layer__z-index: 5;
   --background-layer__z-index: 3;
   --base-layer__z-index: 1;

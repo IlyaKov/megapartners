@@ -1,4 +1,4 @@
-#offer, #positions .title-bg, #cv .title-bg {
+#offer, #positions, #cv {
   position: relative;
 }
 
@@ -9,7 +9,7 @@
 
   background-image: url("../../assets/backgrounds/careers_hero.svg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 #hero .careers-logo {
@@ -36,12 +36,11 @@
 }
 
 #positions .bg.circle {
-  width: 100%;
+  width: 60%;
   margin: auto;
 
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: -12rem;
   left: 0;
   right: 0;
 }
@@ -51,7 +50,7 @@
   margin: auto;
 
   position: absolute;
-  bottom: -8rem;
+  bottom: 70vh;
   left: 0;
   right: 0;
 }

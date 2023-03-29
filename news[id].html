@@ -6,10 +6,10 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/pages/news.css">
+  <link rel="stylesheet" href="css/pages/single_news.css">
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-grid.css">
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-grid.min.css">
-  <title>Megapartners | News</title>
+  <title>Megapartners | News single page</title>
 </head>
 <body>
 <header id="header" class="mt-3">
@@ -66,51 +66,50 @@
   </div>
 </aside>
 
-<section id="news" class="mb-5">
-  <div class="container d-flex flex-column justify-content-center">
-    <h1 class="text-center mb-5">News</h1>
-    <ul class="filters thick-bordered d-flex group p-3">
-      <li>
-        <button class="btn" data-filter="all">View all</button>
-      </li>
-      <li>
-        <button class="btn" data-filter="event">Event</button>
-      </li>
-      <li>
-        <button class="btn" data-filter="interview">Interview</button>
-      </li>
-    </ul>
+<section id="news_content" class="mb-5">
+  <div class="container d-flex">
+    <div class="content d-flex flex-column">
+      <h2>MEGAPARTNERS COLLABORATES WITH POP ARTIST THUMBS FOR ICE LONDON</h2>
+      <ul class="mt-3 tags d-flex align-items-center justify-content-start">
+        <li class="news-tag d-flex align-items-center">
+          <object type="image/svg+xml" data="assets/icons/price_tag.svg"></object>
+          <span class="ms-2">Event</span>
+        </li>
+        <li class="mx-3">20.02.2022</li>
+        <li>1032 views</li>
+      </ul>
+      <p>
+        MEGAPARTNERS, is excited to announce its exclusive collaboration with <a href="#">London-based artist Thumbs</a> for the upcoming ICE London event. With this collaboration, MEGAPARTNERS is setting a precedent for future partnerships with local artists, and plans to bring similar collaborations to all major iGaming events in 2023, aimed to support talents and provide a space for experiments.
+      </p>
+      <p>
+        In addition to showcasing this exciting new style and branding, the studio brings its best products at ICE London, including over 90 highly engaging games and the development of brand exclusives.
+        <a href="#">The development of brand-exclusive and customized games</a> has become the company’s unique selling point and has been highly valued by leading operators in the industry.
+      </p>
+      <p>
+        “MEGAPARTNERS is thrilled to be working with Thumbs and enjoy the exciting new direction we are taking at ICE London. The studio stands for experiments and is constantly looking for new ways to push the boundaries of what is possible within the industry, with a particular focus on creating content for a younger audience”, said Alexandra Shevchenko, Chief Marketing Officer at MEGAPARTNERS. “We look forward to bringing such experiments to all the major iGaming events in 2023 and welcome visitors of ICE London to be the first to enjoy the collaboration!”
+      </p>
+      <div class="quote p-4 d-flex align-items-center">
+        <object class="me-4" data="assets/icons/coins/news_coin.svg" type=""></object>
+        <q>We look forward to bringing such experiments to all the major iGaming events in 2023</q>
+      </div>
+      <p>
+        In addition to showcasing this exciting new style and branding, the studio brings its best products at ICE London, including over 90 highly engaging games and the development of brand exclusives.
+        <a href="#">The development of brand-exclusive and customized games</a> has become the company’s unique selling point and has been highly valued by leading operators in the industry.
+      </p>
+      <p>
+        Visitors can <a href="#">book a meeting</a> with the team on stand N8-120 at ExCel London to explore the opportunities MEGAPARTNERS has to offer as an innovative and player-driven content provider for the iGaming Industry.
+      </p>
+    </div>
+    <aside class="side_info">
+      dark
+    </aside>
+  </div>
+</section>
 
-    <ul class="filtered-content mt-5">
-      <li class="news-content d-flex flex-column flex-md-row mb-4 thick-bordered p-4">
-        <div class="d-flex align-items-center">
-          <img src="assets/backgrounds/fallback_news_image.svg" alt="alt for news">
-        </div>
-        <div class="info d-flex flex-wrap flex-row flex-md-column justify-content-between justify-content-md-center align-items-center align-items-md-start">
-          <div class="news-tag d-flex align-items-center" data-marker="event">
-            <object type="image/svg+xml" data="assets/icons/price_tag.svg"></object>
-            <span class="ms-2">Event</span>
-          </div>
-          <h5 class="my-3 publication-date">20.02.2023</h5>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid distinctio</h4>
-        </div>
-      </li>
-      <li class="news-content d-flex flex-column flex-md-row mb-4 thick-bordered p-4">
-        <div class="d-flex align-items-center">
-          <img src="assets/backgrounds/fallback_news_image.svg" alt="alt for news">
-        </div>
-        <div class="info d-flex flex-wrap flex-row flex-md-column justify-content-between justify-content-md-center align-items-center align-items-md-start">
-          <div class="news-tag d-flex align-items-center" data-marker="interview">
-            <object type="image/svg+xml" data="assets/icons/price_tag.svg"></object>
-            <span class="ms-2">Interview</span>
-          </div>
-          <h5 class="my-3 publication-date">20.02.2023</h5>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid distinctio</h4>
-        </div>
-      </li>
-
-    </ul>
-    <button class="cta-btn mx-auto mt-5">See more</button>
+<section id="other_news">
+  <div class="container d-flex flex-column align-items-center">
+    <h2>Other News</h2>
+    <button class="cta-btn">See all news</button>
   </div>
 </section>
 
@@ -153,7 +152,5 @@
 </footer>
 
 <script src="index.js"></script>
-<script src="lib/Filter.js"></script>
-<script src="js/news.js"></script>
 </body>
 </html>
