@@ -23,6 +23,10 @@
   border-radius: 5.5rem;
 }
 
+.quote object {
+  width: 18%;
+}
+
 .quote q {
   font-size: 2rem;
   color: var(--dark-font-color);
@@ -54,7 +58,7 @@
 }
 
 #news_content .container .content {
-  flex-basis: 75%;
+  flex-basis: 100%;
 }
 
 .splide__slide {
@@ -138,4 +142,14 @@
 
 .share-panel li:hover svg path:last-child {
   fill: var(--main-font-color);
+}
+
+@media (min-width: 768px) {
+  #news_content .container .content {
+    flex-basis: 75%;
+  }
+
+  .quote object {
+    width: initial;
+  }
 }

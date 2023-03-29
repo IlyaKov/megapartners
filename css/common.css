@@ -389,6 +389,7 @@ form input~span, form textarea~span {
 .theme-toggle {
   cursor: pointer;
 
+  min-width: 102px;
   max-width: 8rem;
   position: relative;
 
