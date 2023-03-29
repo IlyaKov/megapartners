@@ -32,7 +32,7 @@ news.mount();
 const elementsToChangeBackgroundToFont = ['body']
 const elementsToChangeBackgroundToMain = ['.info-tag']
 const elementsToChangeColorToMain = ['p', 'h2', '.side_info small']
-const elementsToChangeColorToFont = ['.info-tag', '.news-tag']
+const elementsToChangeColorToFont = ['.info-tag']
 
 const lightModeToggle = document.querySelector('.theme-toggle')
 const mainBgColor = getComputedStyle(document.body).getPropertyValue('--main-bg-color')
