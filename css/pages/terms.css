@@ -1,0 +1,49 @@
+#terms {
+  padding-top: 12rem;
+  background-image: url("../../assets/backgrounds/single_news_sidebar.svg");
+  background-size: 55%;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+
+#terms .container {
+  gap: 4.5rem;
+}
+
+#terms .container .side_info {
+  order: -1;
+  flex-basis: 100%;
+}
+
+#terms .container .content {
+  flex-basis: 100%;
+}
+
+#terms li h2 {
+  margin: 3rem 0 1.5rem 0;
+  font-family: "Lexend Regular";
+}
+
+#terms li {
+  font-family: "Futura PT";
+  font-size: 1.75rem;
+}
+
+#terms li span {
+  color: var(--secondary-font-color);
+}
+
+@media (min-width: 768px) {
+  #terms .container .side_info {
+    order: 0;
+    flex-basis: 25%;
+  }
+  #terms .container .content {
+    flex-basis: 75%;
+  }
+
+  .quote object {
+    width: initial;
+  }
+}

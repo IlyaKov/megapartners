@@ -407,6 +407,16 @@ form input~span, form textarea~span {
   transition: var(--long-transition);
 }
 
+.theme-palette small {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px){
+  .theme-palette small {
+    font-size: 1rem;
+  }
+}
+
 .theme-toggle .theme-toggle_background {
   padding: .375rem;
 
