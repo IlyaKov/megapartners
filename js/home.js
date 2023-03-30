@@ -91,3 +91,14 @@ const brands = new Splide( '#brands .splide', {
 } );
 
 brands.mount();
+
+new Filter({
+  activeFilter: document.querySelector('.filters .btn'),
+  activeClass: 'active',
+  filters: document.querySelector('.filters'),
+  filtersTag: 'button',
+  markerTag: '.filter-marker',
+  initial_container: document.querySelector('.filtered-content'),
+  initial_content: document.querySelectorAll('.filtered-content > h3'),
+  filterInitial: 'eur'
+})

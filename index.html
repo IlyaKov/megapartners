@@ -231,14 +231,23 @@
           <div class="my-3">
             <div class="d-flex justify-content-between">
               <div class="d-flex flex-column align-items-start">
-                <h3>€50.000 +</h3>
-                <small class="d-block">Casino Profit Required</small>
+                <div class="filtered-content">
+                  <h3 class="filter-marker" data-marker="eur">€50.000 +</h3>
+                  <h3 class="filter-marker" data-marker="btc">1.5 BTC +</h3>
+                  <h3 class="filter-marker" data-marker="usd">$35.000 +</h3>
+                </div>
+
+                <small class="d-block mt-3">Casino Profit Required</small>
                 <small class="d-block">Commission plan</small>
               </div>
               <div class="d-flex flex-column align-items-end">
-                <h3>€50.000 +</h3>
-                <small class="d-block">Casino Profit Required</small>
-                <small class="d-block">Commission plan</small>
+                <ul id="filters-group" class="filters d-flex bordered align-items-center p-2">
+                  <li><button data-filter="eur" class="btn active">EUR</button></li>
+                  <li class="mx-2"><button data-filter="btc" class="btn">BTC</button></li>
+                  <li><button data-filter="usd" class="btn">USD</button></li>
+                </ul>
+                <small class="d-block mt-3">Casino Profit Required</small>
+                <small class="d-block">25%</small>
               </div>
             </div>
           </div>
@@ -447,6 +456,7 @@
 </footer>
 <script src="lib/splide/dist/js/splide.min.js"></script>
 <script src="index.js"></script>
+<script src="lib/Filter.js"></script>
 <script src="js/home.js"></script>
 </body>
 </html>
