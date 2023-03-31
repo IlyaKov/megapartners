@@ -1,0 +1,186 @@
+#hero-guide {
+  padding-top: 12rem;
+  position: relative;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../assets/backgrounds/guide_top.svg");
+}
+
+
+#hero-guide .card {
+  margin-bottom: 2rem;
+  border-radius: 4rem;
+  flex-basis: 0;
+}
+
+#hero-guide .card .cta-btn {
+  font-size: 2rem;
+  padding: 1.5rem 1rem;
+}
+
+#hero-guide .card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+#hero-guide .card object {
+  margin: 0 auto 1.25rem auto;
+  width: 50%;
+}
+
+#guide .container {
+  gap: 3rem;
+}
+
+#guide nav {
+  flex-basis: 22%;
+  min-width: 25%;
+}
+
+#guide h3 {
+  color: var(--main-font-color);
+}
+
+#section-1 object, #section-2 object {
+  width: 50%;
+}
+
+#guide nav li {
+  cursor: pointer;
+  transition-duration: .1s;
+  display: block;
+
+  padding: .75rem 1.5rem;
+  margin-top: 1rem;
+
+  font-size: 1.25rem;
+
+  border: 2px solid #fff;
+  border-radius: 3rem;
+}
+
+#guide nav li:hover {
+  color: var(--main-font-color);
+}
+
+#guide nav ol li.current {
+  background: var(--hover-bg-color);
+  border-color: var(--hover-bg-color);
+}
+
+#guide .content {
+  flex-basis: 72%;
+}
+
+#guide .content .coins {
+  width: 50%;
+}
+
+.color-palette li {
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  padding: 2rem;
+
+  border-radius: 8rem;
+}
+
+.color-palette li .color-value {
+  font-family: "Lexend Bold";
+}
+
+.color-palette .secondary {
+  background-color: var(--secondary);
+}
+
+.color-palette .tint {
+  background-color: #282841;
+}
+
+.color-palette .mint {
+  background-color: #7DDACF;
+}
+
+.color-palette .purple {
+  background-color: #9DADF2;
+}
+
+.color-palette .mint, .color-palette .purple {
+  color: var(--dark-font-color);
+}
+
+.logo-group {
+  width: 50%;
+}
+
+.logo-group object {
+  width: 100%;
+}
+
+#guide-mobile h3 {
+  color: var(--main-font-color);
+}
+
+#guide-mobile .accordion__intro {
+  font-size: 1.75rem;
+}
+
+#guide-mobile .accordion-container {
+  padding: 0;
+  border: none
+}
+
+#guide-mobile .accordion__content {
+  font-size: 2rem;
+}
+
+#guide-mobile .accordion-container__header {
+  padding: 2rem 2.5rem;
+
+  border-radius: 3rem;
+  border: 2px solid var(--main-font-color);
+  background: transparent;
+
+  transition: var(--main-transition);
+}
+
+#guide-mobile .accordion-container__active .accordion-container__header {
+
+  border-radius: 3rem;
+  border: 2px solid var(--hover-bg-color);
+  background: var(--hover-bg-color);
+}
+
+#guide-mobile .accordion-container__active .accordion__intro {
+  color: var(--main-font-color);
+}
+
+#guide-mobile .cross-icon-selected path {
+  fill: white;
+}
+
+@media (min-width: 768px) {
+  #hero-guide .card .cta-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+
+  #hero-guide .card {
+    margin-bottom: 0;
+    border-radius: 10rem;
+    flex-basis: 33%;
+  }
+}
+
+@media (min-height: 300px) {
+  #guide nav ol {
+    position: sticky;
+    top: 10rem;
+  }
+}

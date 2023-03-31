@@ -55,6 +55,7 @@ h4 {
 /* Here and below is a setup for rem */
 @media (min-width:320px) {
   html {
+    scroll-behavior: smooth;
     font-size: 9px;
   }
 }
