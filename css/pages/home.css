@@ -28,11 +28,14 @@
 /*  100% { transform:translateY(-200%);  }*/
 /*}*/
 
+#hero #blog, .simple-bar-wrapper, .simplebar-mask, .simplebar-offset, .simplebar-content-wrapper {
+  border-radius: 6.25rem;
+}
+
 #hero #blog {
   padding: 1.5rem 2.5rem 1.5rem 1.5rem;
 
   display: flex;
-  overflow: hidden;
   flex-basis: 33%;
 
   width: 100%;
@@ -41,7 +44,6 @@
   font-size: 1.5rem;
 
   border: 3px solid var(--secondary);
-  border-radius: 6.25rem;
 
   backdrop-filter: blur(10px);
   background: var(rgba(var(--font), .12));
