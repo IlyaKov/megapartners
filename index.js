@@ -12,3 +12,11 @@ icon.addEventListener('click', ({ target }) => {
     callback(target.parentNode)
   }
 }, true)
+
+new SimpleBar(document.getElementById('blog'), {
+  autoHide: false,
+  clickOnTrack: false,
+  forceEnabled: true,
+  forceVisible: true,
+});
+

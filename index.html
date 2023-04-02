@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/pages/home.css">
+  <link rel="stylesheet" href="lib/scrollbar.css">
   <link rel="stylesheet" href="lib/splide/dist/css/splide.min.css">
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-grid.css">
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-grid.min.css">
@@ -78,29 +79,27 @@
       <p>Raise your ROI with direct advertiser</p>
       <button class="cta-btn">Become a partner</button>
     </div>
-    <div class="blog d-flex flex-column thick-bordered">
-      <ul>
-        <li class="card tinted">
-          <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
-          <small class="mt-4">10.02.2023</small>
-        </li>
-        <li class="card tinted">
-          <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
-          <small class="mt-4">10.02.2023</small>
-        </li>
-        <li class="card tinted">
-          <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
-          <small class="mt-4">10.02.2023</small>
-        </li>
-        <li class="card tinted">
-          <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
-          <small class="mt-4">10.02.2023</small>
-        </li>
-        <li class="card tinted">
-          <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
-          <small class="mt-4">10.02.2023</small>
-        </li>
-      </ul>
+    <div id="blog" data-simplebar data-simplebar-auto-hide="false" simplebar-click-on-track="false">
+      <div class="card tinted">
+        <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
+        <small class="mt-4">10.02.2023</small>
+      </div>
+      <div class="card tinted">
+        <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
+        <small class="mt-4">10.02.2023</small>
+      </div>
+      <div class="card tinted">
+        <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
+        <small class="mt-4">10.02.2023</small>
+      </div>
+      <div class="card tinted">
+        <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
+        <small class="mt-4">10.02.2023</small>
+      </div>
+      <div class="card tinted">
+        <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
+        <small class="mt-4">10.02.2023</small>
+      </div>
     </div>
   </div>
 </section>
@@ -454,10 +453,21 @@
     <span>Copyright © 2023 Megapartners.io</span>
   </div>
 </footer>
+
+<noscript>
+  <style>
+    [data-simplebar] {
+      overflow: auto;
+    }
+  </style>
+</noscript>
+
 <script src="lib/splide/dist/js/splide.min.js"></script>
+<script src="lib/scrollbar.js"></script>
 <script src="index.js"></script>
 <script src="lib/Filter.js"></script>
 <script src="js/home.js"></script>
 <script src="lib/accordion.js"></script>
+
 </body>
 </html>
