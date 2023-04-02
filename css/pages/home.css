@@ -74,8 +74,14 @@
 }
 
 .about_cards {
-  flex-basis: 100%;
+  width: 100%;
 }
+
+/*@media (min-width: 768px) {*/
+/*  .about_cards {*/
+/*    flex-basis: 100%;*/
+/*  }*/
+/*}*/
 
 #about .inner, .about_cards, .about_cards ul {
   gap: 1rem;
@@ -212,17 +218,19 @@
   font-size: .9rem;
 }
 
-#events {
-  overflow: hidden;
-}
-
 #events .splide__track {
   overflow: visible;
 }
 
 #events .card {
-  border-radius: 20rem;
+  border-radius: 4.5rem;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  #events .card {
+    border-radius: 20rem;
+  }
 }
 
 #events .card .inner {

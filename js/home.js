@@ -10,7 +10,15 @@ new SimpleBar(document.getElementById('blog'), {
 const events = new Splide( '#events .splide', {
   pagination: false,
   arrows: false,
-  // type: 'slide',
+  breakpoints: {
+    768: {
+      gap: 0,
+      padding: 0,
+      perPage: 1,
+      drag: false,
+      snap: false
+    }
+  },
   rewind: true,
   perPage: 2,
   speed: 500,
