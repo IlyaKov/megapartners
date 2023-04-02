@@ -14,9 +14,25 @@
   top: 0;
 }
 
+#hero .animation-bg * {
+  max-width: 100px;
+  /*animation: coins 9s infinite linear;*/
+}
+
+#hero .info {
+  flex-basis: 33%;
+}
+
+/*@keyframes coins {*/
+/*  0% { transform:translateY(0);  }*/
+/*  100% { transform:translateY(-200%);  }*/
+/*}*/
+
 #hero #blog {
-  display: flex;
   padding: 1.5rem;
+
+  display: flex;
+  flex-basis: 33%;
 
   overflow: hidden scroll;
   width: 100%;
@@ -75,10 +91,6 @@
   color: var(--dark-font-color);
 }
 
-.about_cards {
-  flex: 4;
-}
-
 #brands .circle {
   pointer-events: none;
   margin: 0 auto;
@@ -110,41 +122,31 @@
   width: 100%;
 }
 
-#brands .splide__pagination {
-  margin: 0 auto;
-  width: 6.5rem;
-  padding: .5rem;
-
-  position: relative;
-  top: 1rem;
-
-  background-color: rgba(var(--font), .12);
-  backdrop-filter: blur(10px);
-
-  border-radius: 2rem;
+.thumbnails {
+  display: flex;
+  margin: 1rem auto 0;
+  padding: 0;
+  justify-content: center;
 }
 
-#brands .splide__pagination__page {
-  width: .75rem;
-  height: .75rem;
-  margin: 0;
-
-  background: rgba(var(--font), .2);
+.thumbnail {
+  min-width: 18rem;
+  padding: 1rem 1.75rem;
+  justify-content: center;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
 }
 
-#brands .splide__pagination li:not(:first-of-type):not(:last-of-type) {
-  margin: 0 .625rem;
+.thumbnail.is-active {
+  border-radius: 5rem;
+  background-color: var(--hover-bg-color);
 }
 
-#brands .splide__pagination__page.is-active {
-  width: 1.5rem;
-  height: 1.5rem;
-
-  background: var(--main-font-color);
-  border: .375rem solid var(--secondary-font-color);
-  opacity: 1;
-
-  transform: none;
+.thumbnail img {
+  max-width: 100%;
+  height: auto;
 }
 
 .splide__slide .thick-bordered {

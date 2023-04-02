@@ -1,3 +1,12 @@
+/*________________HERO SECTION____________*/
+new SimpleBar(document.getElementById('blog'), {
+  autoHide: false,
+  clickOnTrack: false,
+  forceEnabled: true,
+  forceVisible: true,
+});
+
+/*________________EVENTS SECTION____________*/
 const events = new Splide( '#events .splide', {
   pagination: false,
   arrows: false,
@@ -17,7 +26,6 @@ const events = new Splide( '#events .splide', {
 });
 const bar = events.root.querySelector( '.my-carousel-progress-bar' );
 
-// Updates the bar width whenever the carousel moves:
 events.on( 'mounted move', function () {
   const end = events.Components.Controller.getEnd() + 1;
   const rate = Math.min( ( events.index + 1 ) / end, 1 );
@@ -26,22 +34,49 @@ events.on( 'mounted move', function () {
 
 events.mount();
 
+
+/*________________BRANDS SECTION____________*/
 const brands = new Splide( '#brands .splide', {
   perPage: 1,
   arrows: false,
-  start: 0,
-  speed: 500,
+  pagination: false,
+  start: 1,
+  speed: 700,
   rewind: true,
   snap: true,
-  drag: true,
-  dragMinThreshold: {
-    mouse: 120,
-    touch: 60,
-  },
+  drag: false,
+} );
+
+const thumbnails = document.getElementsByClassName( 'thumbnail' );
+let current;
+
+for ( let i = 0; i < thumbnails.length; i++ ) {
+  initThumbnail( thumbnails[ i ], i );
+}
+
+function initThumbnail( thumbnail, index ) {
+  thumbnail.addEventListener( 'click', function () {
+    brands.go( index );
+  } );
+}
+
+brands.on( 'mounted move', function () {
+  const thumbnail = thumbnails[ brands.index ];
+
+  if ( thumbnail ) {
+    if ( current ) {
+      current.classList.remove( 'is-active' );
+    }
+
+    thumbnail.classList.add( 'is-active' );
+    current = thumbnail;
+  }
 } );
 
 brands.mount();
 
+
+/*________________COMMISSIONS SECTION____________*/
 new Filter({
   activeFilter: document.querySelector('.filters .btn'),
   activeClass: 'active',
