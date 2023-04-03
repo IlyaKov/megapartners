@@ -12,3 +12,17 @@ icon.addEventListener('click', ({ target }) => {
     callback(target.parentNode)
   }
 }, true)
+
+const dd = document.querySelector('#dropdown-wrapper');
+const links = document.querySelectorAll('.dropdown-list li');
+const span = document.querySelector('.selected-language span');
+
+dd.addEventListener('click', function() {
+  this.classList.toggle('is-active');
+});
+
+links.forEach((element) => {
+  element.addEventListener('click', function(evt) {
+    span.innerHTML = evt.currentTarget.textContent;
+  })
+})

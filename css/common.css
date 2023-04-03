@@ -389,7 +389,7 @@ form input~span, form textarea~span {
   bottom: 0;
   top: 0;
 
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: var(--main-transition);
 }
 
