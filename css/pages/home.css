@@ -1,3 +1,7 @@
+#hero {
+  padding-top: 12rem;
+}
+
 #hero .circle {
   pointer-events: none;
   width: 40%;
@@ -20,7 +24,7 @@
 }
 
 #hero .info {
-  flex-basis: 33%;
+  width: 100%;
 }
 
 /*@keyframes coins {*/
@@ -33,7 +37,7 @@
 }
 
 #hero #blog {
-  padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+  padding: 1rem 3rem 1rem 1rem;
 
   display: flex;
   flex-basis: 33%;
@@ -41,17 +45,39 @@
   width: 100%;
   max-height: 38rem;
 
-  font-size: 1.5rem;
-
   border: 3px solid var(--secondary);
 
   backdrop-filter: blur(10px);
   background: var(rgba(var(--font), .12));
 }
 
+#hero #blog .card > div {
+  font-size: 1.8rem;
+}
+
+#hero #blog small, #commissions .card.bg-transparent small {
+  font-size: 1.6rem;
+}
+
 @media screen and (min-width: 980px) {
-  #hero .blog {
+  #hero {
+    padding-top: 12rem;
+  }
+  #hero #blog {
+    padding: 1.5rem 2.5rem 1.5rem 1.5rem;
     max-width: 33%;
+  }
+  #hero #blog .card {
+    padding: 2rem 4rem;
+  }
+  #hero #blog .card > div {
+    font-size: 1.5rem;
+  }
+  #hero #blog small, #commissions .card.bg-transparent small {
+    font-size: 1.8rem;
+  }
+  #hero .info {
+    flex-basis: 33%;
   }
 }
 
@@ -77,11 +103,24 @@
   width: 100%;
 }
 
-/*@media (min-width: 768px) {*/
-/*  .about_cards {*/
-/*    flex-basis: 100%;*/
-/*  }*/
-/*}*/
+.about_cards h4 {
+  color: var(--secondary-font-color);
+  font-size: 2.5rem;
+}
+
+.about_cards small {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .about_cards h4 {
+    font-size: 2rem;
+  }
+
+  .about_cards small {
+    font-size: 1.2rem;
+  }
+}
 
 #about .inner, .about_cards, .about_cards ul {
   gap: 1rem;
@@ -147,7 +186,6 @@
 }
 
 .thumbnail {
-  min-width: 18rem;
   padding: 1rem 1.75rem;
   justify-content: center;
   overflow: hidden;
@@ -184,17 +222,16 @@
   top: 0;
 }
 
-#commissions ul+div, #commissions ul {
-  flex: 1;
+#commissions .card.bg-transparent, #commissions .card.tinted {
+  border-radius: 2.5rem;
 }
 
-#commissions .card.bg-transparent {
-  border-radius: 4.5rem;
+#commissions .card.bg-transparent h3 {
+  font-size: 3.5rem;
 }
 
-#commissions li:not(:first-of-type):not(:last-of-type) {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+#commissions ul, #commissions .content {
+  gap: 2rem
 }
 
 #commissions .card.bg-transparent:hover * {
@@ -205,7 +242,11 @@
   color: var(--hover-bg-color);
 }
 
-#commissions #filters-group.filters li {
+#commissions .content > * {
+  flex-basis: 50%;
+}
+
+#commissions #filters-group.filters li, #commissions ul, #commissions ul li, #commissions .content, #commissions .card.tinted {
   margin: 0;
 }
 
@@ -215,7 +256,53 @@
 
 .filters .btn {
   padding: .5rem 1rem;
-  font-size: .9rem;
+  font-size: 2rem;
+}
+
+#commissions .card.tinted header {
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#commissions .card.tinted {
+  font-size: 1.5rem;
+}
+
+#commissions .card.tinted h3 {
+  margin: 2rem 0;
+  font-size: 5rem;
+}
+
+@media (min-width: 768px) {
+  #commissions header {
+    text-align: left;
+  }
+
+  #commissions .card.bg-transparent h3 {
+    font-size: 4rem;
+  }
+
+  #commissions .card.tinted h3 {
+    margin: 0;
+    font-size: 4rem;
+  }
+
+  .filters .btn {
+    font-size: .9rem;
+  }
+
+  #commissions .card.bg-transparent, #commissions .card.tinted {
+    border-radius: 4.5rem;
+  }
+
+  #commissions ul, #commissions .content {
+    gap: 2rem
+  }
+
+  #commissions .card.bg-transparent small {
+    font-size: 1.25rem;
+  }
 }
 
 #events .splide__track {
@@ -227,39 +314,36 @@
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  #events .card {
-    border-radius: 20rem;
-  }
-}
-
-#events .card .inner {
-  transform: translateY(1.5rem);
-  transition: var(--main-transition);
-}
-
-#events .card .cta-btn {
-  opacity: 0;
-  background: var(--tint-main);
-  transform: translateY(4rem);
-}
-
-#events .card:hover .inner, #events .card:hover .cta-btn {
-  transform: translateY(0);
-}
-
 #events .card .place {
   color: var(--muted-main-font-color);
 }
 
-#events .card:hover h3 {
-  color: var(--dark-font-color);
+#events .card, #events .card:hover {
+  background-color: var(--tint-main);
 }
 
-#events .card:hover .cta-btn {
-  opacity: 1;
-  background: var(--tint-main);
-  transition-delay: .1s;
+#events .card h3 {
+  margin: 1.5rem 0;
+
+  color: var(--secondary-font-color);
+  font-size: 3.5rem;
+}
+
+#events .card h4 {
+  font-size: 2.5rem;
+}
+
+#events .card .place {
+  font-size: 1.8rem;
+}
+
+#events .card small {
+  font-size: 1.65rem;
+}
+
+#events .card .cta-btn {
+  color: var(--tint-main);
+  background: var(--hover-bg-color);
 }
 
 #events .my-carousel-progress {
@@ -273,6 +357,36 @@
   border-radius: 10px;
   transition: var(--main-transition);
   width: 0;
+}
+
+@media (min-width: 768px) {
+  #events .card {
+    border-radius: 20rem;
+  }
+  #events .card:hover h3 {
+    color: var(--dark-font-color);
+  }
+  #events .card:hover {
+    background-color: var(--hover-bg-color);
+  }
+  #events .card:hover .cta-btn {
+    opacity: 1;
+    color: var(--main-font-color);
+    background: var(--tint-main);
+    transition-delay: .1s;
+  }
+  #events .card .cta-btn {
+    opacity: 0;
+    background: var(--tint-main);
+    transform: translateY(4rem);
+  }
+  #events .card:hover .inner, #events .card:hover .cta-btn {
+    transform: translateY(0);
+  }
+  #events .card .inner {
+    transform: translateY(1.5rem);
+    transition: var(--main-transition);
+  }
 }
 
 #faq .coins_left {

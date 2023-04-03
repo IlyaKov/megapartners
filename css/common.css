@@ -135,8 +135,16 @@ section:not(:first-of-type) {
   padding: 6rem 0;
 }
 
+@media (min-width: 768px) {
+  section .container > p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
 p {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: var(--muted-main-font-color);
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -162,8 +170,8 @@ p {
 }
 
 .cta-btn {
-  /*width: 100%;*/
-  padding: .8rem 4.5rem;
+  width: 100%;
+  padding: 1.8rem 0;
 
   color: inherit;
   font-weight: bold;
@@ -175,7 +183,6 @@ p {
   background-position: 100% 0;
 
   border: none;
-  border-radius: 3rem;
 
   transition: var(--long-transition);
 }
@@ -237,19 +244,22 @@ p {
   position: relative;
 }
 
+input, textarea, .cta-btn {
+  font-size: 2rem;
+  border-radius: 3rem;
+}
+
 input, textarea {
   width: inherit;
-
-  padding: .8rem 2rem;
+  padding: 1.8rem 2rem;
 
   background-color: var(--input-bg-color);
   border: var(--secondary-border);
-  border-radius: 1.75rem;
 }
 
 form input~span, form textarea~span {
   font-family: "Futura PT";
-  font-size: .75rem;
+  font-size: 1.2rem;
 
   padding: .125rem .5rem;
 
@@ -266,7 +276,18 @@ form input~span, form textarea~span {
   border: none;
   border-radius: 1.5rem;
 }
-
+@media (min-width: 768px) {
+  input, textarea {
+    padding: 1.3rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 2.5rem;
+  }
+  .cta-btn {
+    font-size: 1.5rem;
+    padding: 1.3rem 4.5rem;
+    width: initial;
+  }
+}
 .card {
   margin: 0 .5rem;
   padding: 1.75rem 3rem;
@@ -322,12 +343,15 @@ form input~span, form textarea~span {
 }
 
 .accordion__intro {
+  font-size: 2.1rem;
+
   position: relative;
 
   transition: var(--main-transition);
 }
 
 .accordion__content {
+  font-size: 1.95rem;
   max-height: 0;
   overflow: hidden;
   will-change: max-height;
@@ -342,6 +366,15 @@ form input~span, form textarea~span {
 .accordion-container__active .accordion__content {
   padding-top: 1.5rem;
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .accordion__intro {
+    font-size: 1.8rem;
+  }
+  .accordion__content {
+    font-size: 1.65rem;
+  }
 }
 
 .sidebar {

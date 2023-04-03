@@ -10,6 +10,7 @@ new SimpleBar(document.getElementById('blog'), {
 const events = new Splide( '#events .splide', {
   pagination: false,
   arrows: false,
+  mediaQuery: 'max',
   breakpoints: {
     768: {
       gap: 0,
