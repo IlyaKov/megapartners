@@ -305,6 +305,10 @@
   }
 }
 
+#events {
+  overflow: visible;
+}
+
 #events .splide__track {
   overflow: visible;
 }
@@ -360,6 +364,10 @@
 }
 
 @media (min-width: 768px) {
+  #events {
+    min-height: 450px;
+    overflow: hidden;
+  }
   #events .card {
     border-radius: 20rem;
   }
