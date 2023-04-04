@@ -4,7 +4,7 @@
 
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-image: url("../../assets/backgrounds/guide_top.svg");
 }
 
@@ -163,6 +163,16 @@
 
 #guide-mobile .cross-icon-selected path {
   fill: white;
+}
+
+#guide-mobile .secondary, #guide-mobile .tint, #guide-mobile .purple, #guide-mobile .mint {
+  border-radius: 3rem;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+#guide-mobile .color-palette li > div {
+  flex-basis: 49%;
 }
 
 @media (min-width: 768px) {
