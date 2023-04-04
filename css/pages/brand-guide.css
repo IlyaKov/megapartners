@@ -74,6 +74,10 @@
   flex-basis: 72%;
 }
 
+.content li span {
+  font-size: 1.2rem;
+}
+
 #guide .content .coins {
   width: 50%;
 }
@@ -128,6 +132,7 @@
 }
 
 #guide-mobile .accordion__intro {
+  flex-basis: 90%;
   font-size: 1.75rem;
 }
 
