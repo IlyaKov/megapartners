@@ -10,28 +10,17 @@ footer nav a:hover {
   text-decoration: underline;
 }
 
-footer nav .group > *:not(:first-child):not(:last-child) {
-  margin: 0 1rem;
+#footer .group li {
+  margin: 0;
 }
 
-footer nav .group > :first-child {
-  margin-right: 1rem;
+#footer {
+  font-size: 1.8rem;
 }
 
-footer nav .group > :last-child {
-  margin-left: 1rem;
-}
-
-footer .group > *:not(:first-child):not(:last-child) {
-  margin: 0 .5rem;
-}
-
-footer .group > :first-child {
-  margin-right: .5rem;
-}
-
-footer .group > :last-child {
-  margin-left: .5rem;
+#footer header {
+  margin-top: 2rem;
+  text-align: left;
 }
 
 footer span {
@@ -45,4 +34,47 @@ footer header {
 
 footer .logo {
   max-width: 25%;
+}
+
+#footer .social-media li {
+  cursor: pointer;
+}
+#footer .social-media li svg path {
+  transition: var(--main-transition);
+}
+#footer .social-media li:hover svg g > path:first-child, #footer .social-media li:hover svg > path:first-child {
+  fill: #6CA2FA;;
+}
+
+@media (min-width: 768px) {
+  #footer {
+    font-size: 1.2rem;
+  }
+
+  #footer nav .group > *:not(:first-child):not(:last-child) {
+    margin: 0 1rem;
+  }
+
+  #footer nav .group > :first-child {
+    margin-right: 1rem;
+  }
+
+  #footer nav .group > :last-child {
+    margin-left: 1rem;
+  }
+
+  #footer .group > *:not(:first-child):not(:last-child) {
+    margin: 0 .5rem;
+  }
+
+  #footer .group > :first-child {
+    margin-right: .5rem;
+  }
+
+  #footer .group > :last-child {
+    margin-left: .5rem;
+  }
+  #footer header {
+    text-align: right;
+  }
 }
