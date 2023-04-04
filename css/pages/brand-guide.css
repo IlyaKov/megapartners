@@ -47,6 +47,56 @@
   width: 50%;
 }
 
+#guide, #guide-mobile, #mobile-bg {
+  position: relative;
+}
+
+#guide .bg.circle {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: -20%;
+}
+
+#guide .bg.light {
+  width: 40%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#guide .bg.coins {
+  width: 17%;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+}
+
+#mobile-bg .bg.circle, #mobile-bg .bg.light {
+  position: absolute;
+}
+
+#mobile-bg .bg.light {
+  left: 0;
+  top: -20%;
+  width: 70%;
+}
+
+#mobile-bg .bg.circle {
+  bottom: 0;
+  right: 0;
+  width: 70%;
+}
+
+.bg.coins-mobile {
+  padding-top: 3rem;
+  width: 100%;
+}
+
+#guide-mobile.d-block {
+  padding-top: 3rem;
+}
+
 #guide nav li {
   cursor: pointer;
   transition-duration: .1s;
