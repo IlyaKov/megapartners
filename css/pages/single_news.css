@@ -12,8 +12,14 @@
   pointer-events: none;
   position: absolute;
   left: 0;
+  top: 9%;
+  width: 60%;
+}
+
+#news_content .bg.light-top {
+  position: absolute;
   top: 0;
-  width: 50%;
+  right: 0;
 }
 
 #other_news .bg.pattern-mobile {
@@ -193,6 +199,10 @@ a.cta-btn:hover {
 }
 
 @media (min-width: 768px) {
+  #news_content .bg.circle {
+    top: 0;
+    width: 50%;
+  }
   #news_content {
     background-image: url("../../assets/backgrounds/single_news_sidebar.svg");
     background-size: 55%;
