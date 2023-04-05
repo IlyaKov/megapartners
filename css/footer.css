@@ -15,6 +15,7 @@ footer nav a:hover {
 }
 
 #footer {
+  z-index: var(--content-layer__z-index);
   font-size: 1.8rem;
 }
 

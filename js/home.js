@@ -54,7 +54,7 @@ const brands = new Splide( '#brands .splide', {
   rewind: true,
   snap: true,
   drag: false,
-} );
+});
 
 const thumbnails = document.getElementsByClassName( 'thumbnail' );
 let current;

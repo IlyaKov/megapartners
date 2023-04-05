@@ -7,6 +7,43 @@
   padding-top: 12rem;
 }
 
+#news .bg.coins-bottom {
+  width: 100%;
+  z-index: var(--background-layer__z-index);
+  position: absolute;
+  bottom: -18%;
+  left: 0;
+  right: 0;
+}
+
+#news .bg.coins-bottom-mobile {
+  width: 100%;
+  z-index: var(--background-layer__z-index);
+  position: absolute;
+  bottom: -4%;
+  left: 0;
+  right: 0;
+}
+
+#news .splide {
+  padding: 1.2rem 1.4rem;
+  border-radius: 14rem;
+}
+
+#news .splide li .btn {
+  padding: 1.5rem 2.5rem;
+  font-size: 2rem;
+  border-radius: 3rem;
+}
+
+#news .splide li .btn.active {
+  background: var(--hover-bg-color);
+}
+
+.splide li .btn:hover {
+  background: transparent;
+}
+
 .news-content {
   gap: 1rem;
 
@@ -28,6 +65,19 @@
 
 .news-content > * {
   flex: 1;
+}
+
+.splide .shadow {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  z-index: var(--content-layer__z-index);
+  border-radius: 14rem;
+  background: linear-gradient(270deg, #110A1D, rgba(17, 10, 29, 0) 35.93%, rgba(255, 255, 255, 0) 84%, #110A1D);
 }
 
 .news-content h4 {
