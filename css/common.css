@@ -447,6 +447,14 @@ form input~span, form textarea~span {
   .theme-palette small {
     font-size: 1rem;
   }
+
+  .theme-toggle .moon {
+    left: 15%;
+  }
+
+  .theme-toggle .sun {
+    right: 5%;
+  }
 }
 
 .theme-toggle .theme-toggle_background {
@@ -463,7 +471,16 @@ form input~span, form textarea~span {
 }
 
 .theme-toggle .sun, .theme-toggle .moon {
+  position: relative;
   z-index: 3;
+}
+
+.theme-toggle .moon {
+  left: 15%;
+}
+
+.theme-toggle .sun {
+  right: 15%;
 }
 
 .theme-toggle svg, .theme-toggle path, .theme-toggle_background {

@@ -35,7 +35,7 @@ news.mount();
 
 const elementsToChangeBackgroundToFont = ['body', '.subscribe-form input']
 const elementsToChangeBackgroundToMain = ['.info-tag', '.subscribe-form .input span', '.subscribe-form .input span']
-const elementsToChangeColorToMain = ['p', 'h2', '.subscribe-form header']
+const elementsToChangeColorToMain = ['.theme-palette small', '.share-panel small', 'p', 'h2', '.subscribe-form header h5']
 const elementsToChangeColorToFont = ['.info-tag', '.subscribe-form .input span']
 const svgFillToMain = ['.share-panel svg path:first-child']
 const svgFillToFont = ['.share-panel svg path:last-child']

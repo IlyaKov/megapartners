@@ -1,4 +1,5 @@
 #news_content {
+  position: relative;
   padding-top: 12rem;
   background-image: url("../../assets/backgrounds/single_news_sidebar.svg");
   background-size: 55%;
@@ -6,8 +7,41 @@
   background-repeat: no-repeat;
 }
 
+#other_news {
+  position: relative;
+}
+
+#news_content .bg.circle {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+#other_news .bg.pattern-mobile {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#other_news .pattern-light {
+  width: 100%;
+  position: absolute;
+  top: -23%;
+  left: 0;
+  right: 0;
+}
+
 #news_content a {
   color: var(--secondary-font-color);
+}
+
+a.cta-btn:hover {
+  color: var(--main-font-color);
 }
 
 #news_content .news-tag {
@@ -34,7 +68,7 @@
 
 #news_content p {
   margin: 1.5rem 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.3;
   color: var(--main-font-color);
 }
@@ -150,12 +184,34 @@
     flex-basis: 75%;
   }
 
+  #other_news .bg.light {
+    position: absolute;
+    width: 80%;
+    right: 0;
+    bottom: 30%;
+  }
+
+  #other_news .bg.pattern {
+    width: 100%;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -13rem;
+  }
+
+  #news_content .bg.circle {
+    width: 40%;
+  }
   .quote object {
     width: initial;
   }
 
   .subscribe-form header h5 {
     font-size: 2rem;
+  }
+  #news_content p {
+    font-size: 1.6rem;
   }
 }
 
