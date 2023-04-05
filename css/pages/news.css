@@ -31,7 +31,7 @@
 }
 
 #news .splide li .btn {
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem;
   font-size: 2rem;
   border-radius: 3rem;
 }
@@ -90,7 +90,6 @@
 }
 
 .news-content .news-tag {
-  flex-basis: 15%;
   padding: .5rem 1rem;
   text-transform: uppercase;
 
