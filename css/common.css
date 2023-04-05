@@ -411,16 +411,16 @@ form input~span, form textarea~span {
   cursor: pointer;
 
   min-width: 102px;
-  /*max-width: 8rem;*/
+  max-width: 102px;
   position: relative;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: .75rem;
+  padding: 8px;
 
-  border-radius: 2rem;
+  border-radius: 18px;
   background-color: var(--hover-bg-color);
 }
 
@@ -447,26 +447,18 @@ form input~span, form textarea~span {
   .theme-palette small {
     font-size: 1rem;
   }
-
-  .theme-toggle .moon {
-    left: 15%;
-  }
-
-  .theme-toggle .sun {
-    right: 5%;
-  }
 }
 
 .theme-toggle .theme-toggle_background {
-  padding: .375rem;
+  padding: 6px;
 
   width: 45%;
   height: 72%;
 
   position: absolute;
-  left: .375rem;
+  left: 5px;
 
-  border-radius: 1.5rem;
+  border-radius: 16px;
   background-color: var(--main-font-color);
 }
 
@@ -476,11 +468,11 @@ form input~span, form textarea~span {
 }
 
 .theme-toggle .moon {
-  left: 15%;
+  left: 13px;
 }
 
 .theme-toggle .sun {
-  right: 15%;
+  right: 12px;
 }
 
 .theme-toggle svg, .theme-toggle path, .theme-toggle_background {
