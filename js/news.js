@@ -20,6 +20,7 @@ new Filter({
 
 const news = new Splide( '#news .splide', {
   perPage: 3,
+  focus: 1,
   arrows: false,
   pagination: false,
   start: 0,
