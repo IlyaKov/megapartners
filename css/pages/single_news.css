@@ -187,7 +187,21 @@ a.cta-btn:hover {
   fill: var(--main-font-color);
 }
 
+#other_news .post-date {
+  font-size: 1.6rem;
+}
+
+#other_news h5 {
+  font-size: 2rem;
+}
+
 @media (min-width: 768px) {
+  #other_news .post-date {
+    font-size: 1.4rem;
+  }
+  #other_news h5 {
+    font-size: 1.8rem;
+  }
   #news_content .container .content {
     flex-basis: 75%;
   }

@@ -5,6 +5,7 @@ copyToCB.addEventListener('click', () => navigator.clipboard.writeText(window.lo
 const news = new Splide( '#other_news .splide', {
   perPage: 3,
   start: 0,
+  speed: 1200,
   mediaQuery: 'max',
   breakpoints: {
     768: {

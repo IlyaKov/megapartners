@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd04f26-3a76-4e79-a16a-7a8c966ae9db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/backgrounds/brands_circle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/backgrounds/footer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/backgrounds/hero-light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/backgrounds/hero_circle.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/pages/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pages/single_news.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pages/single_news.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/single-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/single-post.js" afterDir="false" />
     </list>
+    <list id="0e0eb119-ac36-42eb-85cb-48bf94a91550" name="Unversioned Files" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,41 +31,410 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/icons/coins" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5dd04f26-3a76-4e79-a16a-7a8c966ae9db" name="Changes" comment="" />
+      <changelist id="0e0eb119-ac36-42eb-85cb-48bf94a91550" name="Unversioned Files" comment="" />
       <created>1679438369349</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679438369349</updated>
       <workItem from="1679438373133" duration="641000" />
-      <workItem from="1679439664247" duration="3424000" />
+      <workItem from="1679439664247" duration="186869000" />
     </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1679438518711</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00003" summary="fix fonts, setup events, backgrounds">
+      <created>1679527656862</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1679438518711</updated>
+      <updated>1679527656862</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00004" summary="contact form, backgrounds, blog">
+      <created>1679534003639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679534003639</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix layout base">
+      <created>1679586949411</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679586949412</updated>
+    </task>
+    <task id="LOCAL-00006" summary="mobile adaptive">
+      <created>1679760848517</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679760848517</updated>
+    </task>
+    <task id="LOCAL-00007" summary="mobile adaptive blog">
+      <created>1679761709326</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679761709326</updated>
+    </task>
+    <task id="LOCAL-00008" summary="careers page &amp; adaptive fixes">
+      <created>1679793854654</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679793854654</updated>
+    </task>
+    <task id="LOCAL-00009" summary="careers filters and adaptive">
+      <created>1679850921718</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679850921718</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adaptive for careers">
+      <created>1679866871021</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679866871021</updated>
+    </task>
+    <task id="LOCAL-00011" summary="adaptive for careers &amp; index">
+      <created>1679869449169</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679869449169</updated>
+    </task>
+    <task id="LOCAL-00012" summary="news pages &amp; adaptive, bug fixes">
+      <created>1680048116843</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680048116843</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add background to single news">
+      <created>1680048401273</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680048401273</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix basis for news card">
+      <created>1680048901332</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680048901332</updated>
+    </task>
+    <task id="LOCAL-00015" summary="light mode setup">
+      <created>1680115644961</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680115644961</updated>
+    </task>
+    <task id="LOCAL-00016" summary="remove tags from light mode">
+      <created>1680116247204</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680116247204</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix single post page">
+      <created>1680122028119</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680122028120</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix single post page">
+      <created>1680123632132</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680123632132</updated>
+    </task>
+    <task id="LOCAL-00019" summary="remove bottom sidebar content from desktop">
+      <created>1680123853451</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680123853451</updated>
+    </task>
+    <task id="LOCAL-00020" summary="preload css">
+      <created>1680124229686</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1680124229687</updated>
+    </task>
+    <task id="LOCAL-00021" summary="single post">
+      <created>1680126617831</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1680126617831</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add terms and conditions">
+      <created>1680131319484</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1680131319484</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add filters to commissions">
+      <created>1680134788570</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1680134788571</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add filters to commissions">
+      <created>1680275129160</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1680275129162</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix coins markup">
+      <created>1680275571251</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1680275571251</updated>
+    </task>
+    <task id="LOCAL-00026" summary="clickable header logo">
+      <created>1680277570357</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1680277570357</updated>
+    </task>
+    <task id="LOCAL-00027" summary="scrollbar">
+      <created>1680437642258</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1680437642258</updated>
+    </task>
+    <task id="LOCAL-00028" summary="brands">
+      <created>1680447639533</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1680447639533</updated>
+    </task>
+    <task id="LOCAL-00029" summary="scroll fix">
+      <created>1680447717429</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1680447717429</updated>
+    </task>
+    <task id="LOCAL-00030" summary="cards about">
+      <created>1680448332431</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1680448332431</updated>
+    </task>
+    <task id="LOCAL-00031" summary="scrollbar opacity">
+      <created>1680448502269</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1680448502269</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fix blog props">
+      <created>1680449873396</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1680449873396</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fix blog layout">
+      <created>1680451024743</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1680451024743</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fix home layout">
+      <created>1680454941566</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1680454941567</updated>
+    </task>
+    <task id="LOCAL-00035" summary="home mobile">
+      <created>1680536066197</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1680536066202</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fix events">
+      <created>1680536462225</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1680536462225</updated>
+    </task>
+    <task id="LOCAL-00037" summary="create language btn">
+      <created>1680565366387</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1680565366387</updated>
+    </task>
+    <task id="LOCAL-00038" summary="brand-guide fix">
+      <created>1680567175430</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1680567175430</updated>
+    </task>
+    <task id="LOCAL-00039" summary="header + footer fixes">
+      <created>1680568803801</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1680568803802</updated>
+    </task>
+    <task id="LOCAL-00040" summary="terms adjust">
+      <created>1680569455754</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1680569455754</updated>
+    </task>
+    <task id="LOCAL-00041" summary="guide mobile fixes">
+      <created>1680603350893</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1680603350897</updated>
+    </task>
+    <task id="LOCAL-00042" summary="fix group styles">
+      <created>1680603647059</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1680603647059</updated>
+    </task>
+    <task id="LOCAL-00043" summary="guide backgrounds">
+      <created>1680648747549</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1680648747549</updated>
+    </task>
+    <task id="LOCAL-00044" summary="news content">
+      <created>1680655271314</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1680655271314</updated>
+    </task>
+    <task id="LOCAL-00045" summary="add filter">
+      <created>1680655372951</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1680655372951</updated>
+    </task>
+    <task id="LOCAL-00046" summary="change input filter focus">
+      <created>1680655573590</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1680655573591</updated>
+    </task>
+    <task id="LOCAL-00047" summary="fixes for news">
+      <created>1680701363729</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1680701363729</updated>
+    </task>
+    <task id="LOCAL-00048" summary="events fixes">
+      <created>1680704010929</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1680704010929</updated>
+    </task>
+    <task id="LOCAL-00049" summary="footer fixes">
+      <created>1680705634861</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1680705634861</updated>
+    </task>
+    <task id="LOCAL-00050" summary="news fixes">
+      <created>1680718412695</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1680718412708</updated>
+    </task>
+    <task id="LOCAL-00051" summary="fix fonts for single-post">
+      <created>1680719361781</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1680719361781</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="scrollbar" />
+    <MESSAGE value="brands" />
+    <MESSAGE value="scroll fix" />
+    <MESSAGE value="cards about" />
+    <MESSAGE value="scrollbar opacity" />
+    <MESSAGE value="fix blog props" />
+    <MESSAGE value="fix blog layout" />
+    <MESSAGE value="fix home layout" />
+    <MESSAGE value="home mobile" />
+    <MESSAGE value="fix events" />
+    <MESSAGE value="create language btn" />
+    <MESSAGE value="brand-guide fix" />
+    <MESSAGE value="header + footer fixes" />
+    <MESSAGE value="terms adjust" />
+    <MESSAGE value="guide mobile fixes" />
+    <MESSAGE value="fix group styles" />
+    <MESSAGE value="guide backgrounds" />
+    <MESSAGE value="news content" />
+    <MESSAGE value="add filter" />
+    <MESSAGE value="change input filter focus" />
+    <MESSAGE value="fixes for news" />
+    <MESSAGE value="events fixes" />
+    <MESSAGE value="footer fixes" />
+    <MESSAGE value="news fixes" />
+    <MESSAGE value="fix fonts for single-post" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix fonts for single-post" />
   </component>
 </project>
