@@ -1,4 +1,5 @@
 #terms {
+  position: relative;
   padding-top: 12rem;
   background-image: url("../../assets/backgrounds/single_news_sidebar.svg");
   background-size: 55%;
@@ -6,9 +7,30 @@
   background-repeat: no-repeat;
 }
 
+#terms .circle-bottom{
+  position: absolute;
+  bottom: -2%;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#terms .bg.circle-right {
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 11%;
+}
 
 #terms .container {
   gap: 4.5rem;
+}
+
+#terms .bg.circle-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27%;
 }
 
 #terms .container .side_info {
@@ -26,8 +48,30 @@
 }
 
 #terms li {
+  position: relative;
   font-family: "Futura PT";
   font-size: 1.75rem;
+}
+
+.bg.light-2 {
+  position: absolute;
+  bottom: -8%;
+  right: -14%;
+  width: 60%;
+}
+
+.bg.circle-7 {
+  position: absolute;
+  left: -15%;
+  top: -30%;
+  width: 40%;
+}
+
+.bg.light-8 {
+  width: 85%;
+  position: absolute;
+  top: -25%;
+  right: -22%;
 }
 
 #terms li span {
@@ -45,5 +89,11 @@
 
   .quote object {
     width: initial;
+  }
+}
+
+@media (min-width: 1441px) {
+  .bg.light-2 {
+    bottom: -5%;
   }
 }
