@@ -411,7 +411,7 @@ form input~span, form textarea~span {
   cursor: pointer;
 
   min-width: 102px;
-  max-width: 8rem;
+  /*max-width: 8rem;*/
   position: relative;
 
   display: flex;
