@@ -16,7 +16,16 @@
   width: 60%;
 }
 
+#news_content .bg.circle-middle {
+  pointer-events: none;
+  position: absolute;
+  bottom: 4%;
+  width: 50%;
+  right: 0;
+}
+
 #news_content .bg.light-top {
+  pointer-events: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -32,6 +41,7 @@
 }
 
 #other_news .pattern-light {
+  pointer-events: none;
   width: 100%;
   position: absolute;
   top: -23%;
@@ -221,6 +231,7 @@ a.cta-btn:hover {
   }
 
   #other_news .bg.light {
+    pointer-events: none;
     position: absolute;
     width: 80%;
     right: 0;

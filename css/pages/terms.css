@@ -1,10 +1,11 @@
 #terms {
   position: relative;
   padding-top: 12rem;
-  background-image: url("../../assets/backgrounds/single_news_sidebar.svg");
-  background-size: 55%;
-  background-position: top right;
-  background-repeat: no-repeat;
+  background: none;
+}
+
+#terms object {
+  pointer-events: none;
 }
 
 #terms .circle-bottom{
@@ -79,6 +80,12 @@
 }
 
 @media (min-width: 768px) {
+  #terms {
+    background-image: url("../../assets/backgrounds/single_news_sidebar.svg");
+    background-size: 55%;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
   #terms .container .side_info {
     order: 0;
     flex-basis: 25%;
