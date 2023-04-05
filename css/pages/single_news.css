@@ -1,10 +1,7 @@
 #news_content {
   position: relative;
   padding-top: 12rem;
-  background-image: url("../../assets/backgrounds/single_news_sidebar.svg");
-  background-size: 55%;
-  background-position: top right;
-  background-repeat: no-repeat;
+  background: none;
 }
 
 #other_news {
@@ -196,6 +193,13 @@ a.cta-btn:hover {
 }
 
 @media (min-width: 768px) {
+  #news_content {
+    background-image: url("../../assets/backgrounds/single_news_sidebar.svg");
+    background-size: 55%;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
   #other_news .post-date {
     font-size: 1.4rem;
   }
