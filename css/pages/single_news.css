@@ -73,6 +73,10 @@ a.cta-btn:hover {
   color: var(--main-font-color);
 }
 
+#news_content p:first-of-type {
+  margin-top: 3rem;
+}
+
 .tags li:not(:first-child) {
   padding: .5rem 1rem;
   text-transform: uppercase;
@@ -163,6 +167,10 @@ a.cta-btn:hover {
   text-transform: uppercase;
 }
 
+.share-panel small {
+  font-size: 2rem;
+}
+
 .share-panel li path {
   cursor: pointer;
   transition: var(--main-transition);
@@ -210,6 +218,11 @@ a.cta-btn:hover {
   .subscribe-form header h5 {
     font-size: 2rem;
   }
+
+  .share-panel small {
+    font-size: 1rem;
+  }
+
   #news_content p {
     font-size: 1.6rem;
   }
