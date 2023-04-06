@@ -36,6 +36,20 @@
   background-color: var(--tint-main);
 }
 
+#offer .card h4 {
+  color: var(--secondary-font-color);
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+}
+
+#offer .card:hover h4 {
+  color: var(--dark-font-color);
+}
+
+#offer .card span {
+  font-size: 1.6rem;
+}
+
 #positions .bg.circle {
   pointer-events: none;
   width: 60%;
@@ -67,7 +81,14 @@
 }
 
 #positions .card small {
+  font-size: 1.8rem;
   color: var(--muted-main-font-color);
+}
+
+#positions .card h4 {
+  margin-top: .5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
 }
 
 #positions .card:hover small {
@@ -87,10 +108,28 @@
 }
 
 @media (min-width:980px) {
+  #offer .card h4 {
+    margin-bottom: .75rem;
+    font-size: 2rem;
+  }
+
+  #offer .card .bg-coin {
+    max-width: 20%;
+  }
+  #offer .card div:last-child {
+    max-width: 75%;
+  }
+
   #offer .card, #positions .card {
     width: 45%;
     max-width: calc(50% - 15px);
     flex-basis: 45%;
+  }
+  #positions .card small {
+    font-size: 1.4rem;
+  }
+  #positions .card h4 {
+    margin-bottom: .7rem;
   }
 }
 
@@ -108,6 +147,42 @@
   gap: 2rem;
 }
 
+#positions .splide {
+  padding: 1.2rem 1.4rem;
+  border-radius: 14rem;
+}
+
+#positions .splide li .btn {
+  padding: 1.5rem;
+  font-size: 2rem;
+  border-radius: 3rem;
+}
+
+#positions .splide li .btn.active {
+  background: var(--hover-bg-color);
+}
+
+.splide li .btn:hover {
+  background: transparent;
+}
+
+.splide .shadow {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  z-index: var(--content-layer__z-index);
+  border-radius: 14rem;
+  background: linear-gradient(270deg, #110A1D, rgba(17, 10, 29, 0) 35.93%, rgba(255, 255, 255, 0) 84%, #110A1D);
+}
+
+#positions .filtered-content {
+  width: 100%;
+}
+
 #offer .bg-coin {
   position: relative;
   max-width: 25%;
@@ -118,13 +193,14 @@
   animation-iteration-count: infinite;
 }
 
-#offer .coin-number {
+#offer .card .coin-number {
   width: 30%;
   height: 30%;
 
   color: var(--tint-main);
 
-  font-size: 3.5rem;
+  font-size: 3rem;
+  font-weight: 600;
 
   position: absolute;
   top: calc(50% - 15%);
@@ -155,6 +231,17 @@
   background-size: cover;
 }
 
+#cv form .cta-btn {
+  width: 100%;
+}
+
+#file + label.active-file {
+  color: var(--main-font-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #cv form {
   border-radius: 4rem;
   backdrop-filter: blur(10px);
@@ -166,18 +253,33 @@
 }
 
 .location-tag, .time-tag {
+  padding: .5rem 1rem;
   color: var(--secondary-font-color);
-  padding: .75rem;
+
+  font-size: 1.6rem;
+  border-width: 1px;
   border-radius: 3rem;
 }
 
-#cv .group * {
+#cv .group > * {
   margin: 0;
 }
 
 @media screen and (min-width: 980px) {
+  .location-tag, .time-tag {
+    padding: .4rem .8rem;
+    font-size: 1.3rem;
+  }
+  .location-tag svg, .time-tag svg {
+    width: 20%;
+  }
+  #offer .coin-number {
+    font-size: 3.5rem;
+  }
+
   #cv form li {
     margin: 0;
+    max-width: 50%;
   }
 
   #cv .group > *:not(:first-child):not(:last-child) {

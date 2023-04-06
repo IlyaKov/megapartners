@@ -227,17 +227,54 @@ p {
   background: var(--hover-bg-color);
 }
 
-.input {
+.input, #file+label {
   width: 100%;
   position: relative;
 }
 
-input, textarea, .cta-btn {
+.error-text {
+  margin-top: .3rem;
+  color: #E21A1A;
+}
+
+.error-label {
+  color: var(--main-font-color);
+  background: #E21A1A;
+  border: 1px solid #E21A1A;
+}
+
+.error-input {
+ border-color: #E21A1A!important;
+}
+
+textarea, input {
+  font-family: "Lexend Regular";
+}
+
+.truncated-text {
+  max-width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, .2);
+  font-family: "Lexend Regular";
+}
+
+#file+label {
+  cursor: pointer;
+  color: rgba(255, 255, 255, .2);
+}
+
+input, textarea, .cta-btn, #file+label {
   font-size: 2rem;
   border-radius: 3rem;
 }
 
-input, textarea {
+input, textarea, #file+label {
+  display: block;
   width: inherit;
   padding: 1.8rem 2rem;
 
@@ -264,8 +301,16 @@ form input~span, form textarea~span {
   border: none;
   border-radius: 1.5rem;
 }
+
+#file {
+  visibility: hidden;
+  position: absolute;
+  left: -9999%;
+  width: 0;
+  height: 0;
+}
 @media (min-width: 768px) {
-  input, textarea {
+  input, textarea, #file + label {
     padding: 1.3rem 2rem;
     font-size: 1.5rem;
     border-radius: 2.5rem;
@@ -430,6 +475,10 @@ form input~span, form textarea~span {
 
 .theme-palette small {
   font-size: 2rem;
+}
+
+#file {
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px){
