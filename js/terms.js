@@ -1,5 +1,5 @@
 const elementsToChangeBackgroundToFont = ['body']
-const elementsToChangeColorToMain = ['ol li', 'h2']
+const elementsToChangeColorToMain = ['ol li', 'h2', '.theme-palette small']
 
 const lightModeToggle = document.querySelector('.theme-toggle')
 const mainBgColor = getComputedStyle(document.body).getPropertyValue('--main-bg-color')
@@ -7,7 +7,6 @@ const mainFontColor = getComputedStyle(document.body).getPropertyValue('--main-f
 
 const changeElementsColor = (elements, color) => document.querySelectorAll(elements).forEach(elem => elem.style.color = color)
 const changeElementsBackground = (elements, color) => document.querySelectorAll(elements).forEach(elem => elem.style.backgroundColor = color)
-const changeSvgFill = (elements, color) => document.querySelectorAll(elements).forEach(elem => elem.style.fill = color)
 
 const handleLightMode = () => {
   const isDarkMode = Number(document.body.style.backgroundColor !== mainFontColor)
