@@ -301,10 +301,11 @@
 }
 
 #commissions .light {
+  pointer-events: none;
   position: absolute;
-  width: 60%;
+  width: 80%;
   left: 0;
-  top: 0;
+  top: -20%;
 }
 
 #commissions .card.bg-transparent, #commissions .card.tinted {
@@ -359,7 +360,24 @@
   font-size: 5rem;
 }
 
+#brands {
+  padding-bottom: 0;
+}
+#commissions {
+  padding-top: 2rem;
+}
 @media (min-width: 768px) {
+  #brands {
+    padding-bottom: 6rem;
+  }
+  #commissions {
+    padding-top: 6rem;
+  }
+  #commissions .light {
+    width: 60%;
+    left: 0;
+    top: 0;
+  }
   #brands .circle {
     margin: 0 auto;
     width: 60%;
@@ -398,6 +416,7 @@
 }
 
 #events {
+  position: relative;
   overflow: visible;
 }
 
@@ -455,10 +474,74 @@
   width: 0;
 }
 
+#events .bg.circle {
+  position: absolute;
+  width: 100%;
+  top: calc(-23vw * 1.5);
+}
+
+#subscribe {
+  position: relative;
+}
+
+#subscribe .bg.circle {
+  pointer-events: none;
+  position: absolute;
+  top: calc(-26vw * 1.5);
+  width: 100%;
+}
+
+#subscribe {
+  padding: 0;
+}
+
+#faq, #contact, #about {
+  position: relative;
+}
+
+#faq .mobile-pattern {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(-38vw * 1.5);
+  width: 100%;
+}
+
+#contact .mobile-pattern {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(-24vw * 1.5);
+  width: 100%;
+}
+
 @media (min-width: 768px) {
+  #subscribe {
+    padding: 6rem 0;
+  }
+  #subscribe .bg.circle {
+    top: calc(-26vw * 1.5);
+  }
+  #subscribe .circle-desktop {
+    pointer-events: none;
+    position: absolute;
+    width: 65%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: calc(-13vw * 1.5);
+  }
   #events {
     display: inline-table;
     overflow: hidden;
+  }
+  #events .circle-bottom {
+    position: absolute;
+    width: 60%;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    bottom: calc(-1vw * 1.5);;
   }
   #events .card {
     border-radius: 20rem;
@@ -509,8 +592,10 @@
 }
 
 #contact {
-  background-image: url("../../assets/backgrounds/footer.svg");
-  background-size: cover;
+  background-image: url("../../assets/backgrounds/home_footer-mobile.svg");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 #contact form {
@@ -520,10 +605,14 @@
 }
 
 #contact form header h4 {
+  font-size: 2.5rem;
   color: var(--secondary-font-color);
 }
 
 #contact form header span {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
   color: var(--muted-main-font-color);
 }
 
@@ -539,6 +628,12 @@
   width: 100%;
 }
 
+#about .bg.light {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  top: calc(-15vw * 1.5);
+}
 @media screen and (min-width: 680px) {
   #hero .light {
     width: 55%;
@@ -546,6 +641,14 @@
 }
 
 @media screen and (min-width: 980px) {
+  #contact form header span {
+    font-size: 1.8rem;
+  }
+  #contact {
+    background-size: cover;
+    background-position: top;
+    background-image: url("../../assets/backgrounds/footer.svg");
+  }
   #contact form li {
     margin: 0;
   }
