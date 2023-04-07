@@ -634,6 +634,113 @@
   width: 60%;
   top: calc(-15vw * 1.5);
 }
+
+#contact .dropdown-wrapper {
+  border: none;
+  background: none;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.5rem;
+  transition: var(--main-transition);
+}
+
+#contact .dropdown-wrapper .dropdown-value {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: var(--input-bg-color);
+  border: 2px solid var(--secondary);
+  border-radius: 2.5rem;
+  padding: 1.3rem 2rem;
+  z-index: 9;
+}
+
+#contact .dropdown-wrapper .dropdown-value:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  z-index: 15;
+  border-color: #fff transparent;
+}
+
+#contact .dropdown-wrapper.is-active .dropdown-value {
+  z-index: 9;
+  border-radius: 2.5rem;
+  background: var(--main);
+  box-shadow: none;
+  color: white;
+}
+
+#contact .dropdown-wrapper > span {
+  color: rgba(255, 255, 255, .2);
+}
+
+#contact .dropdown-value.active {
+  color: var(--main-font-color);
+}
+
+#contact .dropdown-wrapper .dropdown-title {
+  font-family: "Futura PT";
+  font-size: 1.2rem;
+
+  z-index: 17;
+  padding: .125rem .5rem;
+
+  position: absolute;
+  left: calc(2rem + 2px);
+  /* To make it exactly the same level as a placeholder,
+   ** you have to sum input left padding and border thickness
+   */
+  top: -.75rem;
+
+  color: var(--dark-font-color);
+  background-color: #fff;
+
+  border: none;
+  border-radius: 1.5rem;
+}
+
+#contact .dropdown-wrapper.is-active .dropdown-value:after {
+  border-color: var(--secondary) transparent;
+  transform: rotate(180deg);
+}
+
+#contact .dropdown-wrapper.is-active .dropdown-list {
+  border-bottom: 2px solid var(--secondary);
+  max-height: 400px;
+}
+
+#contact .dropdown-list li:first-child {
+  padding-top: 3rem;
+}
+
+#contact .dropdown-list {
+  z-index: 8;
+  /* Size & position */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  /* Styles */
+  background: var(--main-bg-color);
+  border-radius: 0 0 2.5rem 2.5rem;
+  border: 2px solid var(--secondary);
+  border-top: none;
+  border-bottom: none;
+  list-style: none;
+  transition: var(--main-transition);
+  /* Hiding */
+  max-height: 0;
+  overflow: hidden;
+}
 @media screen and (min-width: 680px) {
   #hero .light {
     width: 55%;

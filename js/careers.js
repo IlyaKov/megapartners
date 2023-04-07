@@ -35,7 +35,6 @@ careers.mount()
 const fileInput = document.querySelector('#file')
 const fileLabel = document.querySelector('#file + label')
 const deleteHandler = (event) => {
-  console.log(event.target)
   event.stopPropagation()
   if (event.target.tagName.toLowerCase() === 'svg') {
     fileLabel.classList.remove('active-file')
@@ -115,7 +114,14 @@ formBtn.addEventListener('click', (event) => {
   event.preventDefault()
 
   if (validateForm()) {
-    console.log('yeeee')
+    const data = {
+      name: document.querySelector('#cv form input[type=text]').value,
+      email: document.querySelector('#cv form input[type=email]').value,
+      files: document.querySelector('#cv form input[type=file]').files[0],
+      text: document.querySelector('#cv form textarea').value
+    }
+
+    console.log(data)
   } else {
     console.log('nooooooo')
   }

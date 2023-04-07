@@ -24,6 +24,7 @@ a {
 }
 
 input, textarea {
+  outline: none;
   color: var(--main-font-color);
 }
 
@@ -233,14 +234,15 @@ p {
 }
 
 .error-text {
+  font-size: 1.5rem;
   margin-top: .3rem;
   color: #E21A1A;
 }
 
 .error-label {
-  color: var(--main-font-color);
-  background: #E21A1A;
-  border: 1px solid #E21A1A;
+  color: var(--main-font-color) !important;
+  background: #E21A1A !important;
+  border: 1px solid #E21A1A !important;
 }
 
 .error-input {
@@ -310,6 +312,9 @@ form input~span, form textarea~span {
   height: 0;
 }
 @media (min-width: 768px) {
+  .error-text {
+    font-size: 1rem;
+  }
   input, textarea, #file + label {
     padding: 1.3rem 2rem;
     font-size: 1.5rem;

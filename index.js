@@ -13,9 +13,9 @@ icon.addEventListener('click', ({ target }) => {
   }
 }, true)
 
-const dd = document.querySelector('#dropdown-wrapper');
-const links = document.querySelectorAll('.dropdown-list li');
-const span = document.querySelector('.selected-language span');
+const dd = document.querySelector('header #dropdown-wrapper');
+const links = document.querySelectorAll('header .dropdown-list li');
+const span = document.querySelector('header .selected-language span');
 
 dd.addEventListener('click', function() {
   this.classList.toggle('is-active');

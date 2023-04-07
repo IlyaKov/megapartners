@@ -97,3 +97,78 @@ new Filter({
   initial_content: document.querySelectorAll('.filtered-content > h3'),
   filterInitial: 'eur'
 })
+
+/*________________CONTACT SECTION____________*/
+const formBtn = document.querySelector('#contact form .cta-btn')
+
+const validateForm = () => {
+  let valid = true
+  const inputs = document.querySelectorAll('#contact form .input')
+
+  inputs.forEach(input => {
+    if (input.querySelector('button')) return
+
+    input.querySelector('.error-text').textContent = ''
+    input.querySelector('.error-label')?.classList.remove('error-label')
+    input.querySelector('.error-input')?.classList.remove('error-input')
+
+    if (input.classList.contains('dropdown-wrapper') && input.querySelector('.dropdown-value').textContent === 'Choose one...') {
+      valid = false
+
+      input.querySelector('.dropdown-value').classList.add('error-input')
+      input.querySelector('.dropdown-title').classList.add('error-label')
+      input.querySelector('.error-text').textContent = 'This field is required'
+    }
+
+    if (
+      (input.querySelector('input[type=text]') || input.querySelector('input[type=email]'))
+      && !input.querySelector('input').value
+    ) {
+      valid = false
+
+      input.querySelector('input').classList.add('error-input')
+      input.querySelector('span').classList.add('error-label')
+      input.querySelector('.error-text').textContent = 'This field is required'
+    }
+
+    if (input.querySelector('textarea') && !input.querySelector('textarea')?.value) {
+      valid = false
+
+      input.querySelector('textarea').classList.add('error-input')
+      input.querySelector('span').classList.add('error-label')
+      input.querySelector('.error-text').textContent = 'This field is required'
+    }
+  })
+
+  return valid
+}
+
+formBtn.addEventListener('click', (event) => {
+  event.preventDefault()
+
+  if (validateForm()) {
+    const data = {
+      name: document.querySelector('#contact form input[type="text"]').value,
+      email: document.querySelector('#contact form input[type="email"]').value,
+      text: document.querySelector('#contact form textarea').value,
+      subject: document.querySelector('#contact form .dropdown-value').textContent.toLowerCase(),
+    }
+
+    console.log(data)
+  } else {
+    console.log('nooooooo')
+  }
+})
+
+const dropdown = document.querySelector('#contact #dropdown-wrapper');
+const dropdownLinks = document.querySelectorAll('#contact .dropdown-list li');
+const dropdownValue = document.querySelector('#contact #dropdown-wrapper .dropdown-value');
+
+dropdown.addEventListener('click', () => dropdown.classList.toggle('is-active'));
+
+dropdownLinks.forEach((element) => {
+  element.addEventListener('click', function(evt) {
+    dropdownValue.innerHTML = evt.currentTarget.textContent;
+    dropdownValue.classList.add('active')
+  })
+})
