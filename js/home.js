@@ -46,11 +46,12 @@ events.mount();
 
 /*________________BRANDS SECTION____________*/
 const brands = new Splide( '#brands .splide', {
+  type: 'fade',
   perPage: 1,
   arrows: false,
   pagination: false,
-  start: 1,
-  speed: 700,
+  start: 0,
+  speed: 1200,
   rewind: true,
   snap: true,
   drag: false,

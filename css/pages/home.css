@@ -4,18 +4,26 @@
 
 #hero .circle {
   pointer-events: none;
-  width: 40%;
+  width: 60%;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -7%;
 }
 
 #hero .light {
   pointer-events: none;
   width: 100%;
   position: absolute;
-  left: 0;
+  left: -10%;
   top: 0;
+}
+
+#hero h1, #hero p {
+  text-align: center;
+}
+
+#hero p {
+  font-size: 2.2rem;
 }
 
 #hero .animation-bg * {
@@ -62,6 +70,12 @@
 @media screen and (min-width: 980px) {
   #hero {
     padding-top: 12rem;
+  }
+  #hero h1 {
+    text-align: left;
+  }
+  #hero p {
+    text-align: left;
   }
   #hero #blog {
     padding: 1.5rem 2.5rem 1.5rem 1.5rem;
@@ -150,11 +164,78 @@
 #brands .circle {
   pointer-events: none;
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  top: calc(-15vw * 1.5);
+}
+
+.total-info {
+  width: 100%;
+}
+
+.total-info .total-games {
+  padding: 1rem 3.75rem;
+  border-radius: 5rem;
+
+  color: var(--dark-font-color);
+  background-color: var(--background-purple);
+}
+
+.total-games small {
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.6rem;
+}
+
+.total-info .total-games div {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.additional-info small {
+  font-family: "Futura PT";
+  font-size: 1.6rem;
+  color: var(--background-purple);
+}
+
+.additional-info > * {
+  padding: 1rem 0;
+}
+
+.additional-info > *:not(.type) {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.additional-info:last-child {
+  border: none;
+}
+
+.additional-info {
+  width: 100%;
+}
+
+#brands .total-info .total-logo {
+  width: 30%;
+}
+
+.additional-info .year div, .additional-info .type div {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  #brands .additional-info > * {
+    width: initial;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  .total-info {
+    flex-basis: 55%;
+    width: initial;
+  }
 }
 
 #brands ul li {
@@ -202,6 +283,10 @@
 .thumbnail img {
   max-width: 100%;
   height: auto;
+}
+
+.splide__slide {
+  width: 100%;
 }
 
 .splide__slide .thick-bordered {
@@ -275,6 +360,13 @@
 }
 
 @media (min-width: 768px) {
+  #brands .circle {
+    margin: 0 auto;
+    width: 60%;
+    left: 0;
+    right: 0;
+    top: calc(-11vw * 1.5);
+  }
   #commissions header {
     text-align: left;
   }
@@ -365,7 +457,7 @@
 
 @media (min-width: 768px) {
   #events {
-    min-height: 450px;
+    display: inline-table;
     overflow: hidden;
   }
   #events .card {

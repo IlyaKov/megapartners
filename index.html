@@ -84,7 +84,7 @@
 <!--      <object type="image/svg+xml" data="assets/backgrounds/hero_animation_center.svg"></object>-->
 <!--      <object type="image/svg+xml" data="assets/backgrounds/hero_animation_center.svg"></object>-->
 <!--    </div>-->
-    <div id="blog" data-simplebar data-simplebar-auto-hide="false" data-simplebar-click-on-track="false">
+    <div id="blog" class="d-none d-md-flex" data-simplebar data-simplebar-auto-hide="false" data-simplebar-click-on-track="false">
       <div class="card tinted">
         <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
         <small class="mt-4">10.02.2023</small>
@@ -171,14 +171,134 @@
     <div class="splide">
       <div class="splide__track">
         <ul class="splide__list">
-          <li class="splide__slide card px-4 py-2">
-            <object style="width: 100%" type="image/svg+xml" data="assets/icons/brands/total.svg"></object>
+          <li class="splide__slide d-flex flex-column flex-md-row card info p-4 px-md-2">
+            <div class="total-info d-flex align-items-center justify-content-between">
+              <object class="total-logo mx-5" type="image/svg+xml" data="assets/icons/brands/megaslot.svg"></object>
+              <div class="total-games d-flex flex-md-column justify-content-center align-items-center">
+                <small class="d-block me-3 me-md-0">Total games:</small>
+                <div>4357</div>
+              </div>
+            </div>
+            <div class="ps-0 ps-md-3 additional-info d-flex flex-column flex-md-row justify-content-between flex-grow-1">
+              <svg class=" d-none d-md-block" width="3" height="64" viewBox="0 0 3 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.25 64V0" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+              </svg>
+              <div class="year d-flex flex-column justify-content-center align-items-center">
+                <small>Year of foundation</small>
+                <div>2021</div>
+              </div>
+              <svg class="ms-2 d-none d-md-block" width="3" height="64" viewBox="0 0 3 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.25 64V0" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+              </svg>
+              <div class="license d-flex flex-column justify-content-center align-items-center">
+                <small>License</small>
+                <div>
+                  <svg width="33" height="40" viewBox="0 0 33 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="33" height="40" fill="url(#pattern0)"/>
+                    <defs>
+                      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_404_8954" transform="matrix(0.0281889 0 0 0.0232558 -0.00739958 0)"/>
+                      </pattern>
+                      <image id="image0_404_8954" width="36" height="43" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <svg class="ms-2 d-none d-md-block" width="3" height="64" viewBox="0 0 3 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.25 64V0" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+              </svg>
+              <div class="type d-flex flex-column justify-content-center align-items-center">
+                <small>Type</small>
+                <div>Casino</div>
+              </div>
+              <div class="empty-fix d-none d-md-block"></div>
+            </div>
           </li>
-          <li class="splide__slide card px-4 py-2">
-            <object style="width: 100%" type="image/svg+xml" data="assets/icons/brands/total.svg"></object>
+          <li class="splide__slide d-flex flex-column flex-md-row card info p-4 px-md-2">
+            <div class="total-info d-flex align-items-center justify-content-between">
+              <object class="total-logo mx-5" type="image/svg+xml" data="assets/icons/brands/ms-io.svg"></object>
+              <div class="total-games d-flex flex-md-column justify-content-center align-items-center">
+                <small class="d-block me-3 me-md-0">Total games:</small>
+                <div>437</div>
+              </div>
+            </div>
+            <div class="ps-0 ps-md-3 additional-info d-flex flex-column flex-md-row justify-content-between flex-grow-1">
+              <svg class=" d-none d-md-block" width="3" height="64" viewBox="0 0 3 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.25 64V0" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+              </svg>
+              <div class="year d-flex flex-column justify-content-center align-items-center">
+                <small>Year of foundation</small>
+                <div>2021</div>
+              </div>
+              <svg class="ms-2 d-none d-md-block" width="3" height="64" viewBox="0 0 3 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.25 64V0" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+              </svg>
+              <div class="license d-flex flex-column justify-content-center align-items-center">
+                <small>License</small>
+                <div>
+                  <svg width="33" height="40" viewBox="0 0 33 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="33" height="40" fill="url(#pattern0)"/>
+                    <defs>
+                      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_404_8954" transform="matrix(0.0281889 0 0 0.0232558 -0.00739958 0)"/>
+                      </pattern>
+                      <image id="image0_404_8954" width="36" height="43" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAArCAYAAAAQVipNAAAMa0lEQVRYhaWYa4xd1XXHf3vvc++dO+8Zzwz2zLgYjF9gbMDFsSHBNhIIqjSBNpUaKiEeipOoQVRKI6TmC6qUVKhS1Yh+6Zd8qFSB0jSyiGhqFRLHjQUGgweDGUw8ZvyYGXve987j3nvO3mv1wzl3ZjyYV7qlfe+557X/Z63/+q//uYbPMR577LGGsfNjW8QktytsNNb2GdVbfJCeyLlG732jMQbnXM37MOecGTfGnPMhnDFw1qsO7dix4+3nn3++9llrmWvtfOqppwonTpx40Dn35RD7vRjuzOWinArkchHGXPOyq4aqoqqIKhICSfBY694IEn5bq9WODAwM/NenAurq6mrp7++/R0SeMMY8aK0pOhcRGYtzDucc1lqMsRjDVaCstajq0m8RwRiDiKIqiKTTe08QwYdAkDAH/E+pVPrp448//qtnn31WANzevXs7vffPNDQ0/FuSJAeNMduM0ZxzDmscUQZkx86dzM/Ns/O2neRyOf76e0/RWCwyNDTEo48+SrVapVQq8/TTf0NfXy+Dg4N0d3dz/fXXMzkxQXNLKyEEgvcoShApeO+3AY+cPHnyibVr17a0t7cPuRDCMefMX0ZR1BxFuSwSBucivvud7/Llu79CqVTm7rv28vbbb3P/fffx/gcf0N3Tw7atW/ndsWPs338vrS1tVCoVxscnGBg4yeLiIg89/Ges6e7m3VOnePzJJ9lz190Mnj5NpVpDNKAaEFG8923VavWA98lOqyrbjTEYY7DWYAxY6zDGUGgo8JOf/DNnzgwyOjpKe0cnjU1NGKCvr49z5z6ip7ubrjWdbN58E8ViA43FBtb19tHa1sZtt99Gf18/27fv4IPBMyRxzOLi4lLKrTVYa5eCALrJtbY2/326MyKKIpzLOGMdm2/aRHNTEwfuvZfjrx/naw89xMjIJYbOnmVsdIS5uTITE5O8+eYbnD8/zPvvn+brDz9MabZEaXaGgXfeoWtNF0NDZ9mxcwddnZ0cOXIEAURCRnwIIWRcC42mt3edRlGOKIrI53PkchFRlCdyjoZ8ga1bt3Hp0kUqlQr1SH5alW3atImZmRkmJycB8N6jqvT29jE6OkIcx3gVQvB4n+C9EMcxSZLgfYxrbW15djk6KYGtTSOEKtPT0yRJgrWWtWvXYQwkScINN9xIksR4H9i1axfeezo7O4jjmLm5Ofr7/4i5uTItra0kcUy5XEJE0mpUQDXjEVkVBkLwuLa21medi7DWEkUuy6vDWcvmTZu47/77yeULbNiwge3bb2XjTRsZHBzkWwcPkiQJ4+MTPPfcc7S0tCAirFnTydTUFH/+jb+gqamZW26+mampaR555K9oaChw4cKFNFUIopJJg6KaptAuCVKWhjrZMFAsFikUG4njmMbGIiMjo6zv70dEWahUuOeefagq7w8OUmgsYq2lo6MDYwyXRkfYt28fZ88O8eCDf8KhQy8RRflV4rlSz9Jvu1xhNuNHeiIK586do7+/PyPsIF/60m6KxUb6+3oJcY2LF8/jnOXob4/wi//4GVeuXKZarTIzM0NXRwcffTREksQUCgXa2lrp7+9b9fAAAujyvvXr+zSK8uTzeZxL05bLFXDWElnHtw5+GxHhxRdeoFhsJARPtVpBNb1J/XvpqUk5oqoZDSJuuGEjBw4c4MUXX+DKlcuEEBAVYp/gfUKSeLz3JEm8DCiXy2VgHFGUxxlH5DIZsBbjXKofK9pfvRCcc2nLUCWJY0IIK9KiiAiQlnd9poA83scZmECSJEQre1D9BmCylArOWly+QKkWaOnupeShbU0vVbHEqlhyuHwe0naAI8aFgAmepFIiF8+jlRJOY0wI9Txl6wTAIlL/LURXATEpGG8MsWvCdqyn1NZDrqUL29TGfJTDuYgFY7DGksOk+U8ph8sYEQCDYoIQqyA+wVcXqM1NEs2MEZXGiBcmsRgssqI5K1E9QM5FaLGHxe4NNPXciG3tpBDlybkI42xWB8uiqB/7XK4Vk1WQWotiwTpcvoFCcwesvQmNq+Tmp1kcv4CbHKY2cRGDIqJEqsLur+zne9/5NsOzCe+NTnH09BheLWoMAtisPJVPMFCfMuqUMIDNeGZdhLZ0UWzshL5t+Jkx7PmT1C6+l5b9gX0HuGPHTu7atoHRiWkqSSCoUI/eVV5HNRNaZTX/WLX/Yx5JFacCqkvniTO4ji5C53rEgFVVhkev8Ls332OxGnj34nSaAgUxgqp8bPHV2yvnVftXg0UxS0+Z8kxFQQ3WVzFAhAZeGzjFy+eqrO9spbVQYDYxqMKN7Q3MLMTM+hWhX1Eln9RkM129KjqqCrIiMqo4TQsAUcL8LIhiRe38xaGzCJaRco2ZSoKRACR8fc+t3Hv7RoIKoqsik6XvWnN1qlQVIwETUkOWRkVJNOA1wYUqYWESY8xEBJwIi6X91tdQ6+jpaOCre2/BiHLXtn5umVtDU2MDYiwvHf+Q+Vr4TAuyOp1WUwB17gUVEEHUUwhKEifIwiwi4bQNQV7xlTK1uRKigcnpMpdGLvO1XTfR29HO1vU9PHTHZt559/dUF2MQQTPTrvWFVs26nUiPSxpxVSTjo1HFaliyIbowS1Ipk88XDlvn9Jj4GFO6RCwBRDh86iKHj7+HELCR4acvv8ap8QW8BKwETAZGRAgrwMlV2wHEY5fOScEGBBFPTIIRj4ZAZfoCRqFWS34TRVHDcdUwK1MX2+26rWjeEiU1/viWjfzLz1+hvamB3Tf3c+j0pVRHjGKMYlSwJpXBej1ZWJYKFJVUOtI0pdeoeIImREEwQajGVczkMGrM8JUrl99w5XLZd3S03+gr87ty3Rug0IjVwKlzFzn6+3GODV/mytQs0+VqGmFjWdIFMgQrZsaUpXSKKEbBkKYuiMeJYIMQQiCZvUx1eADnzKFyee6QA2hpaZ236h/LNTSjLd0YHOWqYIEIGJ+v4dQur79iY1kEM9Gsl7akUREUNKAS8Jql3AcSCWgSo+cHCIszeF97cn5+ccwBlMvl4ebWtgecr/bT3IMUitiMcCYDEEgthEExZE+fJgYhK3fqxE7tKRIwKojGWBFc8JggSGY/wvwU/vxbqOrRkZGxf6innTRKLT9KKnO46WGIa1TF4xOPhDS8dUsRpIaXGJEYKwkEjwSPaoJ4D5JgQoKGGCMJJnicD+A9ElIjH0JAkirRyGmCT7DW/lMdh6tvTE5Oftje3v5VU13sNS2dSFQgGJuWqDFL5W4Aq4pFScj6nQhCyNIoWA3YTGsIAZWsArPXHxNikpkx7MRZVMIrw8PDP6zjWPJDAMaYH6Dxb8zlM2hURPIFqjlL8BFqHZF1eLFYYzCa+m+HwaBEYtN3dpREFdEMuCoaQqpFEsAb4vkZGqc/REJMY2Pj01dhWK2uW7Zs+UcV/va2Xe08sM/Q0dFEsZAnKqTuXy0YLNZYNOMVJjVmgmJ12eQaSRkWNCDeENeEUjnm8K+Vk29NUPPJj4eGhn64cv1r6X/jli2bX2tsyu144htN3HNnTHtHjnzRpN55RddUEz52scFAVpGY+quyEteU0kyF//wVvPSKUIvl9cHBwbu4ug8vk3rFWMznCw8nsY79/GXPux82sLgg+ERJkvSvlFRYFJOZ0JUz9ePpcaX+RipUFgID73fzy18ronq+UNBvrgYDK0i9coyPj8+sW9f737VgHnvnvTjX093EdV1gowhQrM2hONQ4VG26TYQai6ojpbzDeyWJHfPzcPio58VfQqUSLnd2ttz3+usDZ6+19qe27DvvvPMe1eRnIfbXtXbnqLV0EkV51EBkXVpRJv3rRiVrF6Q6BAavgklqFCpzVGeEhTiMRpF74K233nr3k9b8TA+xe/fuzQYO51y0YSrJMWubsU1tiDW4LMCpFVm2raJgxJMszrE+qtAcKtQkGfaqD5w4ceLMp633uTz7nj17Nnjv/7WpoXg/zvLRVEJc7MTk84iBIIIaEIUcBudj2l1Cl6lijJB4/4tCseHJI0eOzH7WWtfk0Opx6dKl2YMHD7544fz5BRG947q2QmN7LrAwN0+ceKwxRCGQ0xodWqWvUKU9EtTIrHPumf89duz7w8PD1c+z1hd9q2H/nv0boqL9sah+M5/PUZ6vMnx5nM7ONaxra8L7GGMMSRz/exz8948fP37li9z/CwOqj717995azOV/ZJ3703rHFxHy+dzLXvXvXn311VN/yH3/YED1sX///u3W2meMmmISkh8cPXr0o//P/f4PrYbwwI/Mf2UAAAAASUVORK5CYII="/>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <svg class="ms-2 d-none d-md-block" width="3" height="64" viewBox="0 0 3 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.25 64V0" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+              </svg>
+              <div class="type d-flex flex-column justify-content-center align-items-center">
+                <small>Type</small>
+                <div>Casino</div>
+              </div>
+              <div class="empty-fix d-none d-md-block"></div>
+            </div>
           </li>
-          <li class="splide__slide card px-4 py-2">
-            <object style="width: 100%" type="image/svg+xml" data="assets/icons/brands/total.svg"></object>
+          <li class="splide__slide d-flex flex-column flex-md-row card info p-4 px-md-2">
+            <div class="total-info d-flex align-items-center justify-content-between">
+              <object class="total-logo mx-5" type="image/svg+xml" data="assets/icons/brands/unislots.svg"></object>
+              <div class="total-games d-flex flex-md-column justify-content-center align-items-center">
+                <small class="d-block me-3 me-md-0">Total games:</small>
+                <div>357</div>
+              </div>
+            </div>
+            <div class="ps-0 ps-md-3 additional-info d-flex flex-column flex-md-row justify-content-between flex-grow-1">
+              <svg class=" d-none d-md-block" width="3" height="64" viewBox="0 0 3 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.25 64V0" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+              </svg>
+              <div class="year d-flex flex-column justify-content-center align-items-center">
+                <small>Year of foundation</small>
+                <div>2021</div>
+              </div>
+              <svg class="ms-2 d-none d-md-block" width="3" height="64" viewBox="0 0 3 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.25 64V0" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+              </svg>
+              <div class="license d-flex flex-column justify-content-center align-items-center">
+                <small>License</small>
+                <div>
+                  <svg width="33" height="40" viewBox="0 0 33 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="33" height="40" fill="url(#pattern0)"/>
+                    <defs>
+                      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_404_8954" transform="matrix(0.0281889 0 0 0.0232558 -0.00739958 0)"/>
+                      </pattern>
+                      <image id="image0_404_8954" width="36" height="43" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <svg class="ms-2 d-none d-md-block" width="3" height="64" viewBox="0 0 3 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.25 64V0" stroke="white" stroke-opacity="0.2" stroke-width="2"/>
+              </svg>
+              <div class="type d-flex flex-column justify-content-center align-items-center">
+                <small>Type</small>
+                <div>Casino</div>
+              </div>
+              <div class="empty-fix d-none d-md-block"></div>
+            </div>
           </li>
         </ul>
       </div>
