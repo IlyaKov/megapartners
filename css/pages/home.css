@@ -48,7 +48,6 @@
   padding: 1rem 3rem 1rem 1rem;
 
   display: flex;
-  flex-basis: 33%;
 
   width: 100%;
   max-height: 38rem;
@@ -59,6 +58,12 @@
   background: var(rgba(var(--font), .12));
 }
 
+#blog h2 {
+  position: absolute;
+  text-align: center;
+  top:  -2rem;
+}
+
 #hero #blog .card > div {
   font-size: 1.8rem;
 }
@@ -67,7 +72,25 @@
   font-size: 1.6rem;
 }
 
+.blog-container h3 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--main-font-color);
+}
+
 @media screen and (min-width: 980px) {
+  #hero .shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(180deg, #FFFFFF 63.64%, rgba(255, 255, 255, 0) 95.45%);
+  }
+  .blog-container {
+    flex-basis: 33%;
+  }
   #hero {
     padding-top: 12rem;
   }
@@ -79,7 +102,6 @@
   }
   #hero #blog {
     padding: 1.5rem 2.5rem 1.5rem 1.5rem;
-    max-width: 33%;
   }
   #hero #blog .card {
     padding: 2rem 4rem;
@@ -110,7 +132,19 @@
 }
 
 #about .coin {
+  position: relative;
   flex-basis: 23%;
+}
+
+#about .coin object {
+  opacity: 0;
+  position: absolute;
+
+  transition: var(--long-transition);
+}
+
+#about .coin object.active {
+  opacity: 1;
 }
 
 .about_cards {
@@ -118,11 +152,14 @@
 }
 
 .about_cards h4 {
+  pointer-events: none;
+  text-align: center;
   color: var(--secondary-font-color);
   font-size: 2.5rem;
 }
 
 .about_cards small {
+  pointer-events: none;
   font-size: 1.8rem;
 }
 
@@ -134,6 +171,10 @@
   .about_cards small {
     font-size: 1.2rem;
   }
+}
+
+#about .inner {
+  width: 100%;
 }
 
 #about .inner, .about_cards, .about_cards ul {

@@ -69,6 +69,7 @@
 </aside>
 
 <section id="hero" class="d-flex align-items-center">
+  <div class="shadow"></div>
   <object type="image/svg+xml" class="bg light" data="assets/backgrounds/hero-light.svg"></object>
   <object type="image/svg+xml" class="bg circle d-none d-md-block" data="assets/backgrounds/hero_circle.svg"></object>
   <div class="container py-5 d-flex flex-column flex-md-row justify-content-between align-items-center">
@@ -84,26 +85,29 @@
 <!--      <object type="image/svg+xml" data="assets/backgrounds/hero_animation_center.svg"></object>-->
 <!--      <object type="image/svg+xml" data="assets/backgrounds/hero_animation_center.svg"></object>-->
 <!--    </div>-->
-    <div id="blog" class="d-none d-md-flex" data-simplebar data-simplebar-auto-hide="false" data-simplebar-click-on-track="false">
-      <div class="card tinted">
-        <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
-        <small class="mt-4">10.02.2023</small>
-      </div>
-      <div class="card tinted">
-        <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
-        <small class="mt-4">10.02.2023</small>
-      </div>
-      <div class="card tinted">
-        <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
-        <small class="mt-4">10.02.2023</small>
-      </div>
-      <div class="card tinted">
-        <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
-        <small class="mt-4">10.02.2023</small>
-      </div>
-      <div class="card tinted">
-        <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
-        <small class="mt-4">10.02.2023</small>
+    <div class="blog-container">
+      <h3>Blog</h3>
+      <div id="blog" class="d-none d-md-flex" data-simplebar data-simplebar-auto-hide="false" data-simplebar-click-on-track="false">
+        <div class="card tinted">
+          <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
+          <small class="mt-4">10.02.2023</small>
+        </div>
+        <div class="card tinted">
+          <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
+          <small class="mt-4">10.02.2023</small>
+        </div>
+        <div class="card tinted">
+          <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
+          <small class="mt-4">10.02.2023</small>
+        </div>
+        <div class="card tinted">
+          <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
+          <small class="mt-4">10.02.2023</small>
+        </div>
+        <div class="card tinted">
+          <div>Payment methods: Skrill, Neteller, webmoney, Bank transfer</div>
+          <small class="mt-4">10.02.2023</small>
+        </div>
       </div>
     </div>
   </div>
@@ -115,36 +119,42 @@
     <h2 class="text-center">About us</h2>
     <p class="text-center">We are a direct advertiser and an online gambling affiliate program. MEGAPARTNERS guarantees the stability and reliability of all processes for our affiliates and players.</p>
     <div class="inner d-flex flex-column flex-md-row align-items-center">
-      <div class="coin d-none d-md-block svg">
-        <object type="image/svg+xml" data="assets/icons/coins/megapartners.svg"></object>
+      <div class="coin d-none d-md-flex align-items-center svg">
+        <object class="active" data-coin="default" type="image/svg+xml" data="assets/icons/coins/megapartners.svg"></object>
+        <object data-coin="partners" type="image/svg+xml" data="assets/icons/coins/partners.svg"></object>
+        <object data-coin="product" type="image/svg+xml" data="assets/icons/coins/product.svg"></object>
+        <object data-coin="terms" type="image/svg+xml" data="assets/icons/coins/terms.svg"></object>
+        <object data-coin="share" type="image/svg+xml" data="assets/icons/coins/share.svg"></object>
+        <object data-coin="bonuses" type="image/svg+xml" data="assets/icons/coins/bonuses.svg"></object>
+        <object data-coin="quality" type="image/svg+xml" data="assets/icons/coins/quality.svg"></object>
       </div>
       <div class="about_cards d-flex flex-column justify-content-between">
         <ul class="d-flex flex-column flex-md-row flex-wrap">
-          <li class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
+          <li data-coin="partners" class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
             <h4 class="mb-2">5000+</h4>
-            <small class="d-block text-center">Lorem ipsum dolor.</small>
+            <small class="d-block text-center">partners</small>
           </li>
-          <li class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
-            <h4 class="mb-2">5000+</h4>
+          <li data-coin="product" class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
+            <h4 class="mb-2">Product-oriented</h4>
             <small class="d-block text-center">Continuous development and expansion of our own product portfolio</small>
           </li>
-          <li class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
-            <h4 class="mb-2">5000+</h4>
-            <small class="d-block text-center">Continuous development and expansion of our own product portfolio</small>
+          <li data-coin="quality" class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
+            <h4 class="mb-2">High-quality</h4>
+            <small class="d-block text-center">VIP service and 24/7 professional support</small>
           </li>
         </ul>
         <ul class="d-flex flex-column flex-md-row flex-wrap">
-          <li class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
-            <h4 class="mb-2">5000+</h4>
-            <small class="d-block text-center">Continuous development and expansion of our own product portfolio</small>
+          <li data-coin="share" class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
+            <h4 class="mb-2">Lifetime Revenue Share</h4>
+            <small class="d-block text-center">Earn without restrictions</small>
           </li>
-          <li class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
-            <h4 class="mb-2">5000+</h4>
-            <small class="d-block text-center">Lorem ipsum dolor sit amet.</small>
+          <li data-coin="terms" class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
+            <h4 class="mb-2">Team of professionals</h4>
+            <small class="d-block text-center">iGaming enthusiasts and industry fans</small>
           </li>
-          <li class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
-            <h4 class="mb-2">5000+</h4>
-            <small class="d-block text-center">Continuous development and expansion of our own product portfolio</small>
+          <li data-coin="bonuses" class="d-flex flex-column align-items-center justify-content-center card thick-bordered">
+            <h4 class="mb-2">Bonuses</h4>
+            <small class="d-block text-center">Program for sub-partners</small>
           </li>
         </ul>
       </div>

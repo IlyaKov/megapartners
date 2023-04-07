@@ -172,3 +172,26 @@ dropdownLinks.forEach((element) => {
     dropdownValue.classList.add('active')
   })
 })
+
+const svgContainer = document.querySelector('#about .svg.coin')
+const coinsInfoContainer = document.querySelector('#about .about_cards')
+let defaultCoin = svgContainer.querySelector('object')
+let currentCoin = svgContainer.querySelector('object')
+
+coinsInfoContainer.addEventListener('mouseover', ({ target }) => {
+  if (target.tagName.toLowerCase() === 'li') {
+    const relatedIcon = svgContainer.querySelector(`object[data-coin=${target.dataset.coin}]`)
+    currentCoin.classList.remove('active')
+    relatedIcon.classList.add('active')
+    currentCoin = relatedIcon
+  }
+})
+
+coinsInfoContainer.addEventListener('mouseout', () => {
+  if (currentCoin.dataset.coin !== defaultCoin.dataset.coin) {
+    currentCoin.classList.remove('active')
+    defaultCoin.classList.add('active')
+    currentCoin = defaultCoin
+  }
+  return
+})
