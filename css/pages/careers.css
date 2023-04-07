@@ -37,6 +37,7 @@
 }
 
 #offer .card {
+  padding: 1.2rem 2rem;
   margin: 0;
 
   flex-shrink: 1;
