@@ -86,6 +86,10 @@
   right: 0;
 }
 
+#positions .card * {
+  pointer-events: none;
+}
+
 #positions .card {
   margin: 0;
 

@@ -126,3 +126,17 @@ formBtn.addEventListener('click', (event) => {
     console.log('nooooooo')
   }
 })
+
+const careersContent = document.querySelector('#positions .filtered-content')
+const modalWindow = document.querySelector('.modal-window')
+const closeIcon = modalWindow.querySelector('.modal-close')
+
+closeIcon.addEventListener('click', (event) => {
+  event.stopPropagation()
+  modalWindow.classList.remove('active')
+})
+careersContent.addEventListener('click', ({ target }) => {
+  if (target.tagName.toLowerCase() === 'li') {
+    modalWindow.classList.add('active')
+  }
+})
