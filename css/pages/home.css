@@ -26,31 +26,52 @@
   font-size: 2.2rem;
 }
 
-#hero .animation-bg object {
+#hero .animation-bg .center object {
   height: 980px;
   max-width: 100px;
 }
 
+#hero .animation-bg .right object {
+  padding: 15px 0;
+  height: 633px;
+  max-width: 100px;
+}
+
+#hero .animation-bg .left object {
+  padding-bottom: 20px;
+  height: 987px;
+  max-width: 100px;
+}
+
 .animation-bg .center {
-  animation: scroll 30s linear infinite;
+  animation: scroll 50s linear infinite;
   height: calc(980px * 4);
 }
 .animation-bg .left {
-  animation: scroll-reverse 30s linear infinite;
+  animation: scroll-reverse-left 50s linear infinite;
   animation-delay: 5s;
-  height: calc(980px * 4);
+  height: calc(987px * 4);
 }
 .animation-bg .right {
-  animation: scroll-reverse 30s linear infinite;
-  height: calc(980px * 4);
+  animation: scroll-reverse-right 50s linear infinite;
+  height: calc(633px * 4);
 }
 
 @keyframes scroll-reverse-left {
   0% {
-    transform: translateY(calc(-50% - 980px * 2));
+    transform: translateY(calc(-987px * 2));
   }
   100% {
-    transform: translateY(calc(50% - 980px * 2));
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-reverse-right {
+  0% {
+    transform: translateY(calc(-633px * 2));
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
