@@ -26,19 +26,40 @@
   font-size: 2.2rem;
 }
 
-#hero .animation-bg * {
+#hero .animation-bg object {
+  height: 980px;
   max-width: 100px;
-  /*animation: coins 9s infinite linear;*/
 }
 
+.animation-bg .center {
+  animation: scroll 10s linear infinite;
+  height: calc(980px * 4);
+}
+.animation-bg .left, .animation-bg .right {
+  animation: scroll-reverse 10s linear infinite;
+  height: calc(980px * 4);
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateY(calc(-980px * 2));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-980px * 2));
+  }
+}
 #hero .info {
   width: 100%;
 }
-
-/*@keyframes coins {*/
-/*  0% { transform:translateY(0);  }*/
-/*  100% { transform:translateY(-200%);  }*/
-/*}*/
 
 #hero #blog, .simple-bar-wrapper, .simplebar-mask, .simplebar-offset, .simplebar-content-wrapper {
   border-radius: 6.25rem;
@@ -81,6 +102,8 @@
 
 @media screen and (min-width: 980px) {
   #hero .shadow {
+    overflow: hidden;
+    height: 100vh;
     position: absolute;
     left: 0;
     right: 0;
@@ -539,6 +562,7 @@
 }
 
 #faq .mobile-pattern {
+  pointer-events: none;
   position: absolute;
   left: 0;
   right: 0;
@@ -547,6 +571,7 @@
 }
 
 #contact .mobile-pattern {
+  pointer-events: none;
   position: absolute;
   left: 0;
   right: 0;
