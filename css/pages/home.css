@@ -102,6 +102,7 @@
 
 @media screen and (min-width: 980px) {
   #hero .shadow {
+    z-index: 2;
     overflow: hidden;
     height: 100vh;
     position: absolute;
@@ -109,10 +110,25 @@
     right: 0;
     bottom: 0;
     top: 0;
-    background: linear-gradient(180deg, transparent 63.64%, rgba(255, 255, 255, 0) 95.45%);
+  }
+  #hero .shadow .animation-bg > * {
+    z-index: -1;
+  }
+  .gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(
+        0deg, var(--main) 16%,
+        rgba(17, 10, 29, .4) 74%,
+        var(--main) 90%
+    );
   }
   .blog-container {
-    flex-basis: 33%;
+    max-width: 100%;
+    flex-basis: 32%;
   }
   #hero {
     padding-top: 12rem;
@@ -128,11 +144,15 @@
   }
   #hero #blog .card {
     padding: 2rem 4rem;
+    border-radius: 12.25rem;
   }
   #hero #blog .card > div {
     font-size: 1.5rem;
   }
-  #hero #blog small, #commissions .card.bg-transparent small {
+  #hero #blog small {
+    font-size: 1rem;
+  }
+  #commissions .card.bg-transparent small {
     font-size: 1.8rem;
   }
   #hero .info {
@@ -146,8 +166,6 @@
 
 #hero .card:not(:last-of-type) {
   margin: 0 0 1rem 0;
-
-  border-radius: 12.25rem;
 }
 
 #hero .card small {
