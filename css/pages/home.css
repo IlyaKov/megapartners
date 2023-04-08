@@ -35,9 +35,23 @@
   animation: scroll 10s linear infinite;
   height: calc(980px * 4);
 }
-.animation-bg .left, .animation-bg .right {
+.animation-bg .left {
+  animation: scroll-reverse 10s linear infinite;
+  animation-delay: 2s;
+  height: calc(980px * 4);
+}
+.animation-bg .right {
   animation: scroll-reverse 10s linear infinite;
   height: calc(980px * 4);
+}
+
+@keyframes scroll-reverse-left {
+  0% {
+    transform: translateY(calc(-50% - 980px * 2));
+  }
+  100% {
+    transform: translateY(calc(50% - 980px * 2));
+  }
 }
 
 @keyframes scroll-reverse {
@@ -143,6 +157,7 @@
     padding: 1.5rem 2.5rem 1.5rem 1.5rem;
   }
   #hero #blog .card {
+    margin-right: 0;
     padding: 2rem 4rem;
     border-radius: 12.25rem;
   }
