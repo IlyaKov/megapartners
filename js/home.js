@@ -195,6 +195,3 @@ coinsInfoContainer.addEventListener('mouseout', () => {
   }
   return
 })
-
-const f = document.querySelector('.animation-bg .right > object').scrollHeight
-console.log(f)
