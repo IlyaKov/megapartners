@@ -93,17 +93,17 @@ brands.on( 'mounted move', function () {
 brands.mount();
 
 
-/*________________COMMISSIONS SECTION____________*/
-new Filter({
-  activeFilter: document.querySelector('.filters .btn'),
-  activeClass: 'active',
-  filters: document.querySelector('.filters'),
-  filtersTag: 'button',
-  markerTag: '.filter-marker',
-  initial_container: document.querySelector('.filtered-content'),
-  initial_content: document.querySelectorAll('.filtered-content > h3'),
-  filterInitial: 'eur'
-})
+/*________________COMMISSIONS SECTION____ENABLE-FOR-COMMISSIONS-CALCULATOR________*/
+// new Filter({
+//   activeFilter: document.querySelector('.filters .btn'),
+//   activeClass: 'active',
+//   filters: document.querySelector('.filters'),
+//   filtersTag: 'button',
+//   markerTag: '.filter-marker',
+//   initial_container: document.querySelector('.filtered-content'),
+//   initial_content: document.querySelectorAll('.filtered-content > h3'),
+//   filterInitial: 'eur'
+// })
 
 /*________________CONTACT SECTION____________*/
 const formBtn = document.querySelector('#contact form .cta-btn')
