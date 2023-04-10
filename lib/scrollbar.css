@@ -47,7 +47,7 @@
 .simplebar-content-wrapper {
   direction: inherit;
   box-sizing: border-box !important;
-  position: relative;
+  /*position: relative;*/
   display: block;
   height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
   width: auto;

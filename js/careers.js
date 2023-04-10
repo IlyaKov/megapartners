@@ -1,3 +1,10 @@
+new SimpleBar(document.getElementById('description'), {
+  autoHide: false,
+  clickOnTrack: false,
+  forceEnabled: true,
+  forceVisible: true,
+});
+
 new Filter({
   activeFilter: document.querySelector('.filters .btn'),
   activeClass: 'active',
@@ -129,16 +136,34 @@ formBtn.addEventListener('click', (event) => {
 
 /*________________MODAL WINDOW____________*/
 
-// const careersContent = document.querySelector('#positions .filtered-content')
-// const modalWindow = document.querySelector('.modal-window')
-// const closeIcon = modalWindow.querySelector('.modal-close')
-//
-// closeIcon.addEventListener('click', (event) => {
-//   event.stopPropagation()
-//   modalWindow.classList.remove('active')
-// })
-// careersContent.addEventListener('click', ({ target }) => {
-//   if (target.tagName.toLowerCase() === 'li') {
-//     modalWindow.classList.add('active')
-//   }
-// })
+const careersContent = document.querySelector('#positions .filtered-content')
+const modalWindow = document.querySelector('.modal-window')
+const closeIcons = modalWindow.querySelectorAll('.modal-close')
+const handleClose = (event) => {
+  event.stopPropagation()
+  modalWindow.classList.remove('active')
+  modalContent.classList.remove('d-none')
+  modalForm.classList.remove('d-flex')
+
+  modalContent.classList.add('d-flex')
+  modalForm.classList.add('d-none')
+}
+
+closeIcons.forEach(icon => icon.addEventListener('click', handleClose))
+careersContent.addEventListener('click', ({ target }) => {
+  if (target.tagName.toLowerCase() === 'li') {
+    modalWindow.classList.add('active')
+  }
+})
+
+const applyBtn = modalWindow.querySelector('.content .cta-btn')
+const modalForm = modalWindow.querySelector('.form')
+const modalContent = modalWindow.querySelector('.content')
+
+applyBtn.addEventListener('click', () => {
+  modalContent.classList.remove('d-flex')
+  modalContent.classList.add('d-none')
+
+  modalForm.classList.remove('d-none')
+  modalForm.classList.add('d-flex')
+})

@@ -286,7 +286,7 @@
   width: 100%;
 }
 
-#file + label.active-file {
+#file + label.active-file, #file-modal + label.active-file {
   color: var(--main-font-color);
   display: flex;
   justify-content: space-between;
@@ -316,7 +316,48 @@
   margin: 0;
 }
 
+.modal-window .simplebar-placeholder {
+  min-width: 100vw!important;
+}
+
+.modal-window .form {
+  background: rgba(255, 255, 255, 0.12);
+  position: relative;
+  max-width: 530px;
+  border-radius: 5rem;
+}
+
+.modal-window .form h3 {
+  color: var(--main-font-color);
+}
+
+.modal-window .info {
+  background-color: var(--secondary);
+  border-radius: 127px;
+}
+
+.modal-window .info > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-window .info .title {
+  margin-bottom: .5rem;
+  font-family: "Futura PT";
+  font-size: 1.5rem;
+}
+
+.modal-window .info .subtitle {
+  font-family: "Lexend Bold";
+  font-size: 1.5rem;
+}
+
 @media screen and (min-width: 980px) {
+  .modal-window .simplebar-placeholder {
+    min-width: 80vw!important;
+  }
   #cv {
     background-image: url("../../assets/backgrounds/footer.svg");
     background-size: cover;
