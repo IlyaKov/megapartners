@@ -6,6 +6,13 @@ new SimpleBar(document.getElementById('blog'), {
   forceVisible: true,
 });
 
+new SimpleBar(document.getElementById('contact-textarea'), {
+  autoHide: false,
+  clickOnTrack: false,
+  forceEnabled: true,
+  forceVisible: true,
+});
+
 new SimpleBar(document.getElementById('blog-mobile'), {
   autoHide: false,
   clickOnTrack: false,
