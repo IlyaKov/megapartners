@@ -7,10 +7,138 @@
   position: relative;
   /*min-height: 100vh;*/
 
-  background-image: url("../../assets/backgrounds/careers_hero_mobile.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+  /*background-image: url("../../assets/backgrounds/careers_hero_mobile.svg");*/
+  /*background-size: 100%;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
+}
+
+#hero .gradient {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(
+      0deg, var(--main) 16%,
+      rgba(17, 10, 29, .4) 74%,
+      var(--main) 90%
+  );
+}
+
+#hero .shadow .animation-bg > * {
+  z-index: -1;
+}
+
+#hero .shadow {
+  z-index: 2;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+#hero .animation-bg:last-of-type > .left {
+  animation: scroll-top 290s linear infinite;
+  height: calc(922px * 4);
+}
+
+#hero .animation-bg:last-of-type > .center {
+  animation: scroll-reverse-right-column 290s linear infinite;
+  height: calc(922px * 4);
+}
+
+#hero .animation-bg:last-of-type > .right {
+  animation: scroll-reverse-left-right-column 290s linear infinite;
+  height: calc(922px * 4);
+}
+
+#hero .animation-bg > * object {
+  max-width: 148px;
+}
+
+#hero .animation-bg .center object {
+  padding: 20px 0;
+  height: 1081px;
+}
+
+#hero .animation-bg .right object {
+  padding: 20px 0;
+  height: 893px;
+}
+
+#hero .animation-bg .left object {
+  padding-top: 30px;
+  height: 892px;
+}
+
+#hero .animation-bg .center {
+  animation: scroll-reverse 280s linear infinite;
+  height: calc(1121px * 4);
+}
+#hero .animation-bg .left {
+  animation: scroll-reverse-left 290s linear infinite;
+  height: calc(922px * 4);
+}
+#hero .animation-bg .right {
+  animation: scroll-reverse-right 290s linear infinite;
+  height: calc(933px * 4);
+}
+
+@keyframes scroll-reverse-left {
+  0% {
+    transform: translateY(calc(-922px * 2));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes scroll-reverse-left-right-column {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-922px * 2));
+  }
+}
+
+@keyframes scroll-reverse-right {
+  0% {
+    transform: translateY(calc(-933px * 2));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateY(calc(-1121px * 2));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-reverse-right-column {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-1121px * 2));
+  }
+}
+
+@keyframes scroll-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-922px * 2));
+  }
 }
 
 @media (min-width: 768px) {
@@ -20,15 +148,18 @@
 }
 
 #hero h2 {
+  z-index: var(--content-layer__z-index);
   margin: 3rem auto 0 auto;
 }
 
 #hero .careers-logo {
+  z-index: var(--content-layer__z-index);
   max-width: 90%;
   margin: 0 auto;
 }
 
 #hero .bg.circle {
+  z-index: var(--background-layer__z-index);
   pointer-events: none;
   position: absolute;
 
@@ -131,7 +262,7 @@
 
 @media (min-width:980px) {
   #hero {
-    background-image: url("../../assets/backgrounds/careers_hero.svg");
+    /*background-image: url("../../assets/backgrounds/careers_hero.svg");*/
   }
 
   #hero .careers-logo {
