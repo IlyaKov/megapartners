@@ -5,12 +5,12 @@
 #hero {
   padding: 5rem 0 0 0;
   position: relative;
-  /*min-height: 100vh;*/
+  min-height: 100vh;
 
-  /*background-image: url("../../assets/backgrounds/careers_hero_mobile.svg");*/
-  /*background-size: 100%;*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: center;*/
+  background-image: url("../../assets/backgrounds/careers_hero_mobile.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #hero .gradient {
@@ -262,7 +262,7 @@
 
 @media (min-width:980px) {
   #hero {
-    /*background-image: url("../../assets/backgrounds/careers_hero.svg");*/
+    background-image: none;
   }
 
   #hero .careers-logo {
