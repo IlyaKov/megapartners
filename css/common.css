@@ -44,6 +44,7 @@ textarea::-webkit-scrollbar-track {
 }
 
 textarea::-webkit-scrollbar-thumb {
+  border-right: 4px transparent solid;
   border-radius: 6px;
   background-color: var(--secondary);
   outline: 1px solid slategrey;
@@ -378,7 +379,7 @@ input::placeholder, textarea::placeholder {
   font-family: "Lexend Regular";
 }
 
-#file+label, #file-modal {
+#file + label, #file-modal + label {
   cursor: pointer;
   color: rgba(255, 255, 255, .2);
 }
