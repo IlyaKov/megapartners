@@ -43,15 +43,15 @@
   max-width: 100px;
 }
 
-.animation-bg .center {
+#hero .animation-bg .center {
   animation: scroll 50s linear infinite;
   height: calc(980px * 4);
 }
-.animation-bg .left {
+#hero .animation-bg .left {
   animation: scroll-reverse-left 45s linear infinite;
   height: calc(987px * 4);
 }
-.animation-bg .right {
+#hero .animation-bg .right {
   animation: scroll-reverse-right 50s linear infinite;
   height: calc(633px * 4);
 }
@@ -142,7 +142,7 @@
 }
 
 @media screen and (min-width: 980px) {
-  #hero .shadow {
+  #hero .shadow, #commissions .shadow {
     z-index: 2;
     overflow: hidden;
     height: 100vh;
@@ -152,7 +152,10 @@
     bottom: 0;
     top: 0;
   }
-  #hero .shadow .animation-bg > * {
+  #commissions .shadow {
+    height: 120%;
+  }
+  #hero .shadow .animation-bg > *, #commissions .shadow .animation-bg > * {
     z-index: -1;
   }
   .gradient {
@@ -375,11 +378,104 @@
   }
 }
 
-#commissions .coins {
-  position: absolute;
-  right: 5rem;
-  bottom: 0;
-  width: 25%;
+#commissions .animation-bg:last-of-type > .left {
+  animation: scroll-top 290s linear infinite;
+  height: calc(922px * 4);
+}
+
+#commissions .animation-bg:last-of-type > .center {
+  animation: scroll-reverse-right-column 290s linear infinite;
+  height: calc(922px * 4);
+}
+
+#commissions .animation-bg:last-of-type > .right {
+  animation: scroll-reverse-left-right-column 290s linear infinite;
+  height: calc(922px * 4);
+}
+
+#commissions .animation-bg > * object {
+  max-width: 148px;
+}
+
+#commissions .animation-bg .center object {
+  padding: 20px 0;
+  height: 1081px;
+}
+
+#commissions .animation-bg .right object {
+  padding: 20px 0;
+  height: 893px;
+}
+
+#commissions .animation-bg .left object {
+  padding-top: 30px;
+  height: 892px;
+}
+
+#commissions .animation-bg .center {
+  animation: scroll-reverse 280s linear infinite;
+  height: calc(1121px * 4);
+}
+#commissions .animation-bg .left {
+  animation: scroll-reverse-left 290s linear infinite;
+  height: calc(922px * 4);
+}
+#commissions .animation-bg .right {
+  animation: scroll-reverse-right 290s linear infinite;
+  height: calc(933px * 4);
+}
+
+@keyframes scroll-reverse-left {
+  0% {
+    transform: translateY(calc(-922px * 2));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes scroll-reverse-left-right-column {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-922px * 2));
+  }
+}
+
+@keyframes scroll-reverse-right {
+  0% {
+    transform: translateY(calc(-933px * 2));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateY(calc(-1121px * 2));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-reverse-right-column {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-1121px * 2));
+  }
+}
+
+@keyframes scroll-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-922px * 2));
+  }
 }
 
 #commissions .light {
@@ -572,7 +668,7 @@
   padding: 0;
 }
 
-#faq, #contact, #about {
+#faq, #contact, #about, #commissions {
   position: relative;
 }
 
