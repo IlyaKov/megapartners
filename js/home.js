@@ -20,6 +20,39 @@ new SimpleBar(document.getElementById('blog-mobile'), {
   forceVisible: true,
 });
 
+/*________________BRANDS SECTION____________*/
+const brandsSlide = new Splide( '#brands .splide', {
+  pagination: false,
+  arrows: false,
+  mediaQuery: 'max',
+  breakpoints: {
+    768: {
+      gap: 0,
+      padding: 0,
+      perPage: 1,
+      drag: false,
+      snap: false
+    }
+  },
+  rewind: true,
+  perPage: 1,
+  speed: 500,
+  start: 0,
+  gap: '1.5rem',
+  snap: true,
+  padding: { right: '15rem' },
+  drag: true,
+});
+const brandsBar = brandsSlide.root.querySelector( '.my-carousel-progress-bar' );
+
+brandsSlide.on( 'mounted move', function () {
+  const end = brandsSlide.Components.Controller.getEnd() + 1;
+  const rate = Math.min( ( brandsSlide.index + 1 ) / end, 1 );
+  brandsBar.style.width = String( 100 * rate ) + '%';
+} );
+
+brandsSlide.mount();
+
 /*________________EVENTS SECTION____________*/
 const events = new Splide( '#events .splide', {
   pagination: false,
@@ -47,7 +80,7 @@ const events = new Splide( '#events .splide', {
     touch: 30,
   },
 });
-const bar = events.root.querySelector( '.my-carousel-progress-bar' );
+const bar = events.root.querySelector( '#events .my-carousel-progress-bar' );
 
 events.on( 'mounted move', function () {
   const end = events.Components.Controller.getEnd() + 1;
@@ -56,49 +89,6 @@ events.on( 'mounted move', function () {
 } );
 
 events.mount();
-
-
-/*________________BRANDS SECTION____________*/
-const brands = new Splide( '#brands .splide', {
-  type: 'fade',
-  perPage: 1,
-  arrows: false,
-  pagination: false,
-  start: 0,
-  speed: 1200,
-  rewind: true,
-  snap: true,
-  drag: false,
-});
-
-const thumbnails = document.getElementsByClassName( 'thumbnail' );
-let current;
-
-for ( let i = 0; i < thumbnails.length; i++ ) {
-  initThumbnail( thumbnails[ i ], i );
-}
-
-function initThumbnail( thumbnail, index ) {
-  thumbnail.addEventListener( 'click', function () {
-    brands.go( index );
-  } );
-}
-
-brands.on( 'mounted move', function () {
-  const thumbnail = thumbnails[ brands.index ];
-
-  if ( thumbnail ) {
-    if ( current ) {
-      current.classList.remove( 'is-active' );
-    }
-
-    thumbnail.classList.add( 'is-active' );
-    current = thumbnail;
-  }
-} );
-
-brands.mount();
-
 
 /*________________COMMISSIONS SECTION____ENABLE-FOR-COMMISSIONS-CALCULATOR________*/
 // new Filter({
