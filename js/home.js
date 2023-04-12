@@ -36,7 +36,7 @@ const brandsSlide = new Splide( '#brands .splide', {
   },
   rewind: true,
   perPage: 1,
-  speed: 500,
+  speed: 900,
   start: 0,
   gap: '1.5rem',
   snap: true,

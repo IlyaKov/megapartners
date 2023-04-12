@@ -498,6 +498,10 @@
   gap: 2rem
 }
 
+#commissions .cta-btn {
+  width: 100%;
+}
+
 #commissions .card.bg-transparent:hover * {
   color: var(--dark-font-color);
 }
@@ -565,6 +569,10 @@
   }
   #commissions header {
     text-align: left;
+  }
+
+  #commissions .cta-btn {
+    width: fit-content;
   }
 
   #commissions .card.bg-transparent h3 {
