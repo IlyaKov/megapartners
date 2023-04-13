@@ -292,14 +292,14 @@
   padding-bottom: 0;
 }
 
-#brands .circle {
+#about .circle-bottom {
   pointer-events: none;
   margin: 0 auto;
   width: 100%;
   position: absolute;
   left: 0;
   right: 0;
-  top: calc(-15vw * 1.5);
+  bottom: calc(-35vw * 1.5);
 }
 
 @media (max-width: 768px) {
@@ -632,12 +632,15 @@
     left: 0;
     top: 0;
   }
-  #brands .circle {
+  #about {
+    position: relative;
+  }
+  #about .circle-bottom {
     margin: 0 auto;
     width: 60%;
     left: 0;
     right: 0;
-    top: calc(-11vw * 1.5);
+    bottom: calc(-20vw * 1.5);
   }
   #commissions header {
     text-align: left;
