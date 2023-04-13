@@ -202,8 +202,7 @@ h3 {
 }
 
 .modal-window .content .description {
-  max-height: 500px;
-  overflow: scroll;
+  max-height: 300px;
 }
 
 .modal-window .content .description .simplebar-wrapper {
@@ -234,6 +233,7 @@ section:not(:first-of-type) {
   .modal-window .content.l {
     height: initial;
     max-width: 70%;
+    max-height: 100%;
   }
 
   .modal-window .content.m {
