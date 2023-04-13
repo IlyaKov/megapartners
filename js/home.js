@@ -27,11 +27,13 @@ const brandsSlide = new Splide( '#brands .splide', {
   mediaQuery: 'max',
   breakpoints: {
     768: {
-      gap: 0,
+      // autoWidth: true,
+      gap: 20,
       padding: 0,
       perPage: 1,
-      drag: false,
-      snap: false
+      drag: true,
+      snap: true,
+      // rewind: false
     }
   },
   rewind: true,
@@ -43,12 +45,12 @@ const brandsSlide = new Splide( '#brands .splide', {
   padding: { right: '15rem' },
   drag: true,
 });
-const brandsBar = brandsSlide.root.querySelector( '.my-carousel-progress-bar' );
+const brandsBar = brandsSlide.root.querySelectorAll( '.my-carousel-progress-bar' );
 
 brandsSlide.on( 'mounted move', function () {
   const end = brandsSlide.Components.Controller.getEnd() + 1;
   const rate = Math.min( ( brandsSlide.index + 1 ) / end, 1 );
-  brandsBar.style.width = String( 100 * rate ) + '%';
+  brandsBar.forEach(bar => bar.style.width = String( 100 * rate ) + '%');
 } );
 
 brandsSlide.mount();

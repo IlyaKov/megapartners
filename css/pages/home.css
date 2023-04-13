@@ -286,6 +286,12 @@
   color: var(--dark-font-color);
 }
 
+#brands {
+  display: inline-table;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
 #brands .circle {
   pointer-events: none;
   margin: 0 auto;
@@ -296,7 +302,14 @@
   top: calc(-15vw * 1.5);
 }
 
+@media (max-width: 768px) {
+  #brands, #brands .container {
+    max-width: 100vw!important;
+  }
+}
+
 #brands .splide__slide {
+  max-width: 85vw;
   cursor: pointer!important;
   overflow: hidden;
   position: relative;
@@ -306,18 +319,28 @@
   flex: 1;
 }
 
+#brands header img {
+  width: 60%;
+}
+
+#brands .brand-background {
+  margin-bottom: 15rem;
+}
+
 .brand-background svg {
+  pointer-events: none;
+  width: 100%;
   height: 100%;
 
   position: absolute;
-  right: -10%;
-  top: 0;
-  bottom: 0;
+  right: 0;
+  left: 0;
+  top: -30%;
 }
 
 .brand-background object {
+  pointer-events: none;
   position: relative;
-  right: -30px;
   width: 100%;
   z-index: 11;
 }
@@ -337,6 +360,9 @@
 }
 
 #brands .tags li {
+  text-align: center;
+  width: 100%;
+  font-size: 1.8rem;
   border-radius: 2.2rem;
   padding: 8px 16px;
   text-transform: uppercase;
@@ -352,7 +378,7 @@
   color: var(--background-purple);
 }
 
-#brands li small {
+#brands li small, #brands header a {
   font-size: 1.8rem;
 }
 
@@ -366,11 +392,38 @@
 }
 
 #brands .payments li {
-  margin-right: 1rem ;
+  margin-right: 4px;
+}
+
+#brands .unislots .brand-background svg path {
+  fill: #7DDACF;
+}
+
+#brands .slot-io .brand-background svg path {
+  fill: #9DADF2;
 }
 
 @media (min-width: 768px) {
-  #brands .splide__slide .data small {
+  #brands .tags li {
+    font-size: 1rem;
+    width: fit-content;
+  }
+  #brands .brand-background {
+    margin: 0;
+  }
+  .brand-background svg {
+    width: unset;
+    left: unset;
+    right: -10%;
+    top: 0;
+    bottom: 0;
+  }
+
+  .brand-background object {
+    width: 100%;
+    right: -30px;
+  }
+  #brands .splide__slide .data small, #brands header a {
     font-size: 1.7rem;
   }
   #brands .splide__slide .data h4 {
@@ -542,9 +595,6 @@
   font-size: 5rem;
 }
 
-#brands {
-  padding-bottom: 0;
-}
 #commissions {
   padding-top: 2rem;
 }
@@ -714,7 +764,7 @@
     right: 0;
     top: calc(-13vw * 1.5);
   }
-  #events, #brands {
+  #events {
     display: inline-table;
     overflow: hidden;
   }
