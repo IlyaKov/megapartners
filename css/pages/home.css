@@ -320,11 +320,19 @@
 }
 
 #brands header img {
-  width: 60%;
+  height: 60%;
+}
+
+#brands object, #brands svg {
+  pointer-events: none;
 }
 
 #brands .brand-background {
-  margin-bottom: 15rem;
+  margin-bottom: 6rem;
+}
+
+#brands .and-more {
+  background: rgba(255, 255, 255, .12);
 }
 
 .brand-background svg {
@@ -335,7 +343,7 @@
   position: absolute;
   right: 0;
   left: 0;
-  top: -30%;
+  top: -39%;
 }
 
 .brand-background object {
@@ -391,19 +399,33 @@
   font-weight: bold;
 }
 
+#brands .payments ul {
+  gap: 4px;
+}
+
 #brands .payments li {
-  margin-right: 4px;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-#brands .unislots .brand-background svg path {
-  fill: #7DDACF;
-}
+  width: 65px;
+  height: 32px;
 
-#brands .slot-io .brand-background svg path {
-  fill: #9DADF2;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 12px;
+
+  background-color: var(--main-bg-color);
 }
 
 @media (min-width: 768px) {
+  #brands .data {
+    /*max-width: 90%;*/
+  }
+  #brands .payments li {
+    width: 72px;
+    height: 40px;
+    border-radius: 16px;
+  }
   #brands .tags li {
     font-size: 1rem;
     width: fit-content;
@@ -421,7 +443,7 @@
 
   .brand-background object {
     width: 100%;
-    right: -30px;
+    right: -60px;
   }
   #brands .splide__slide .data small, #brands header a {
     font-size: 1.7rem;
