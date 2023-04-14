@@ -1,10 +1,3 @@
-new SimpleBar(document.getElementById('description'), {
-  autoHide: false,
-  clickOnTrack: false,
-  forceEnabled: true,
-  forceVisible: true,
-});
-
 new Filter({
   activeFilter: document.querySelector('.filters .btn'),
   activeClass: 'active',
@@ -152,6 +145,25 @@ const handleClose = (event) => {
 closeIcons.forEach(icon => icon.addEventListener('click', handleClose))
 careersContent.addEventListener('click', ({ target }) => {
   if (target.tagName.toLowerCase() === 'li') {
+    const { dataset } = target
+    Object.keys(dataset).forEach(attribute => {
+      if (attribute === 'description') {
+        modalWindow.querySelector(`.${attribute}`).innerHTML =
+          `
+            <div class="shadow"></div>
+            ${dataset[attribute]}
+          `
+        new SimpleBar(document.getElementById('description'), {
+          autoHide: false,
+          clickOnTrack: false,
+          forceEnabled: true,
+          forceVisible: true,
+        });
+        return
+      }
+
+      modalWindow.querySelector(`.${attribute}`).innerHTML = dataset[attribute]
+    })
     modalWindow.classList.add('active')
   }
 })
