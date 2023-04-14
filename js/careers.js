@@ -147,6 +147,7 @@ careersContent.addEventListener('click', ({ target }) => {
   if (target.tagName.toLowerCase() === 'li') {
     const { dataset } = target
     Object.keys(dataset).forEach(attribute => {
+      if (attribute === 'link') return
       if (attribute === 'description') {
         modalWindow.querySelector(`.${attribute}`).innerHTML =
           `
