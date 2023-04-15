@@ -38,25 +38,25 @@
 }
 
 #hero .animation-bg .left object {
-  padding-bottom: 20px;
+  padding: 10px 0;
   height: 987px;
   max-width: 100px;
 }
 
 #hero .animation-bg .center {
-  animation: scroll 50s linear infinite;
+  animation: scroll 60s linear infinite;
   height: calc(980px * 4);
 }
 #hero .animation-bg .left {
-  animation: scroll-reverse-left 45s linear infinite;
+  animation: scroll-reverse-left-hero 80s linear infinite;
   height: calc(987px * 4);
 }
 #hero .animation-bg .right {
-  animation: scroll-reverse-right 50s linear infinite;
+  animation: scroll-reverse-right-hero 70s linear infinite;
   height: calc(633px * 4);
 }
 
-@keyframes scroll-reverse-left {
+@keyframes scroll-reverse-left-hero {
   0% {
     transform: translateY(calc(-987px * 2));
   }
@@ -65,30 +65,30 @@
   }
 }
 
-@keyframes scroll-reverse-right {
+@keyframes scroll-reverse-right-hero {
   0% {
-    transform: translateY(calc(-633px * 2));
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(calc(-633px * 2));
   }
 }
 
 @keyframes scroll-reverse {
   0% {
-    transform: translateY(calc(-980px * 2));
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(calc(-980px * 2));
   }
 }
 
 @keyframes scroll {
   0% {
-    transform: translateY(0);
+    transform: translateY(calc(-980px * 2));
   }
   100% {
-    transform: translateY(calc(-980px * 2));
+    transform: translateY(0);
   }
 }
 #hero .info {
