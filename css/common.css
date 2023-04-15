@@ -35,6 +35,14 @@ textarea::-webkit-scrollbar {
   width: 8px;
 }
 
+a.cta-btn {
+  display: block;
+}
+
+a.cta-btn:hover {
+  color: var(--main-font-color);
+}
+
 textarea::-webkit-scrollbar-track {
   margin: 20px 8px 20px 0;
   padding-right: 8px;
