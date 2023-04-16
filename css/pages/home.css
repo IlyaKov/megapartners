@@ -468,7 +468,8 @@
   height: calc(922px * 4);
 }
 
-#commissions .animation-bg > * object {
+#commissions .animation-bg > * object, #commissions .animation-bg > * svg {
+  min-width: 148px;
   max-width: 148px;
 }
 
