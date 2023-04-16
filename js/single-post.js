@@ -1,6 +1,6 @@
-const copyToCB = document.querySelector('.copy-to-clipboard')
+const copyToCB = document.querySelectorAll('.copy-to-clipboard')
 
-copyToCB.addEventListener('click', () => navigator.clipboard.writeText(window.location.href))
+copyToCB.forEach(li => li.addEventListener('click', () => navigator.clipboard.writeText(window.location.href)))
 
 const news = new Splide( '#other_news .splide', {
   perPage: 3,
