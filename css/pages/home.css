@@ -33,7 +33,7 @@
 
 #hero .animation-bg .right object {
   padding: 15px 0;
-  height: 633px;
+  height: 753px;
   max-width: 100px;
 }
 
@@ -53,7 +53,7 @@
 }
 #hero .animation-bg .right {
   animation: scroll-reverse-right-hero 70s linear infinite;
-  height: calc(633px * 4);
+  height: calc(753px * 4);
 }
 
 @keyframes scroll-reverse-left-hero {
@@ -67,10 +67,10 @@
 
 @keyframes scroll-reverse-right-hero {
   0% {
-    transform: translateY(0);
+    transform: translateY(calc(-753px * 2));
   }
   100% {
-    transform: translateY(calc(-633px * 2));
+    transform: translateY(0);
   }
 }
 
@@ -85,10 +85,10 @@
 
 @keyframes scroll {
   0% {
-    transform: translateY(calc(-980px * 2));
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(calc(-980px * 2));
   }
 }
 #hero .info {
