@@ -739,17 +739,18 @@
 }
 
 #testimonials .ball_t-l, #testimonials .ball_b-r {
+  width: 90px;
   position: absolute;
 }
 
 .ball_t-l {
-  left: -2rem;
-  top: -2rem;
+  left: -8px;
+  top: -8px;
 }
 
 .ball_b-r {
-  right: -2rem;
-  bottom: -2rem;
+  right: -8px;
+  bottom: -8px;
 }
 
 #testimonials .splide__arrow--prev.left {
@@ -775,6 +776,9 @@
 }
 
 @media (min-width: 768px) {
+  #testimonials .ball_t-l, #testimonials .ball_b-r {
+    width: 105px;
+  }
   #testimonials .splide {
     max-width: 56%;
   }
@@ -782,11 +786,6 @@
   #testimonials .bg.light {
     width: 75%;
     top: calc(-7vw * 1.5);
-  }
-
-  .ball_b-r {
-    right: 0;
-    bottom: 0;
   }
 
   #testimonials .testimonial {
