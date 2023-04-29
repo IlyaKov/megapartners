@@ -55,6 +55,26 @@ brandsSlide.on( 'mounted move', function () {
 
 brandsSlide.mount();
 
+/*________________BRANDS SECTION____________*/
+const testimonials = new Splide( '#testimonials .splide', {
+  type: 'fade',
+  perPage: 1,
+  pagination: false,
+  classes: {
+    arrows: 'splide__arrows',
+    arrow : 'splide__arrow',
+    prev  : 'splide__arrow--prev left',
+    next  : 'splide__arrow--next right',
+  },
+  start: 0,
+  speed: 1200,
+  rewind: true,
+  snap: true,
+  drag: false,
+});
+
+testimonials.mount();
+
 /*________________EVENTS SECTION____________*/
 const events = new Splide( '#events .splide', {
   pagination: false,

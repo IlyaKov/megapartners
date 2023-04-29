@@ -186,7 +186,9 @@
   #hero #blog {
     padding: 1.5rem 2.5rem 1.5rem 1.5rem;
   }
+
   #hero #blog .card {
+    backdrop-filter: none!important;
     margin-right: 0;
     padding: 2rem 4rem;
     border-radius: 12.25rem;
@@ -674,6 +676,140 @@
 
   #commissions .card.bg-transparent small {
     font-size: 1.25rem;
+  }
+}
+
+#testimonials {
+  position: relative;
+}
+
+#testimonials .bg.light {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  top: calc(2vw * 1.5);
+  left: 0;
+  right: 0;
+}
+
+#testimonials .splide {
+  z-index: var(--content-layer__z-index);
+  margin: 0 auto;
+  max-width: 76%;
+}
+
+#testimonials .testimonial {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3rem;
+  background-color: var(--tint-main);
+}
+
+#testimonials .testimonial q {
+  font-family: "Futura PT";
+
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+#testimonials .testimonial object {
+  z-index: var(--background-layer__z-index);
+}
+
+#testimonials .testimonial .content {
+  position: relative;
+  z-index: var(--content-layer__z-index);
+}
+
+#testimonials .testimonial .feedback-link {
+  color: var(--secondary-font-color);
+
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+#testimonials .testimonial .link * {
+  transition: var(--main-transition);
+}
+
+#testimonials .testimonial .link:hover * {
+  color: var(--background-purple);
+  fill: var(--background-purple);
+}
+
+#testimonials .ball_t-l, #testimonials .ball_b-r {
+  position: absolute;
+}
+
+.ball_t-l {
+  left: -2rem;
+  top: -2rem;
+}
+
+.ball_b-r {
+  right: -2rem;
+  bottom: -2rem;
+}
+
+#testimonials .splide__arrow--prev.left {
+  width: 24px;
+  height: 24px;
+  opacity: .8;
+  left: -36px;
+}
+
+#testimonials .splide__arrow--next.right {
+  width: 24px;
+  height: 24px;
+  opacity: .8;
+  right: -36px;
+}
+
+#testimonials .splide__arrow {
+  transition: var(--main-transition);
+}
+
+#testimonials .splide__arrow:hover {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  #testimonials .splide {
+    max-width: 56%;
+  }
+
+  #testimonials .bg.light {
+    width: 75%;
+    top: calc(-7vw * 1.5);
+  }
+
+  .ball_b-r {
+    right: 0;
+    bottom: 0;
+  }
+
+  #testimonials .testimonial {
+    border-radius: 4rem;
+  }
+
+  #testimonials .testimonial q {
+    font-size: 2.2rem;
+  }
+
+  #testimonials .testimonial a {
+    font-size: 1.9rem;
+  }
+  #testimonials .splide__arrow--prev.left {
+    width: 48px;
+    height: 48px;
+    left: -72px;
+  }
+
+  #testimonials .splide__arrow--next.right {
+    width: 48px;
+    height: 48px;
+    right: -72px;
   }
 }
 
