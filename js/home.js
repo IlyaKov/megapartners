@@ -55,7 +55,7 @@ brandsSlide.on( 'mounted move', function () {
 
 brandsSlide.mount();
 
-/*________________BRANDS SECTION____________*/
+/*________________TESTIMONIALS SECTION____________*/
 const testimonials = new Splide( '#testimonials .splide', {
   type: 'fade',
   perPage: 1,
@@ -65,6 +65,12 @@ const testimonials = new Splide( '#testimonials .splide', {
     arrow : 'splide__arrow',
     prev  : 'splide__arrow--prev left',
     next  : 'splide__arrow--next right',
+  },
+  mediaQuery: 'max',
+  breakpoints: {
+    768: {
+      drag: true,
+    }
   },
   start: 0,
   speed: 1200,
