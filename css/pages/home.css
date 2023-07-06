@@ -289,7 +289,7 @@
 }
 
 #brands {
-  display: inline-table;
+  display: contents;
   overflow: hidden;
   padding-bottom: 0;
 }
@@ -419,9 +419,45 @@
   background-color: var(--main-bg-color);
 }
 
+#brands .formular {
+  font-size: 1.5rem;
+  padding: 1.3rem 1.5rem;
+  border-radius: 3rem;
+}
+
+#brands .formular:hover {
+  color: var(--main-font-color);
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+#brands .splide .splide__arrow {
+  border: none;
+  background: transparent;
+  width: 3rem;
+  height: 3rem;
+}
+
+#brands .splide .splide__arrow.left {
+  left: -4rem;
+}
+
+#brands .splide .splide__arrow.right {
+  right: -4rem;
+}
+
+#brands .splide .splide__arrow svg {
+  fill: none;
+  width: 3rem;
+  height: 3rem;
+}
+
 @media (min-width: 768px) {
   #brands .data {
     /*max-width: 90%;*/
+  }
+  #brands .formular > svg {
+    width: 19px!important;
   }
   #brands .payments li {
     width: 72px;
@@ -812,8 +848,12 @@
   }
 }
 
-#events .splide__track, #brands .splide__track {
+#events .splide__track {
   overflow: visible;
+}
+
+#brands .splide__track {
+  overflow: hidden;
 }
 
 #events .card, #brands .card {

@@ -1,29 +1,29 @@
 /*________________HERO SECTION____________*/
-new SimpleBar(document.getElementById('blog'), {
-  autoHide: false,
-  clickOnTrack: false,
-  forceEnabled: true,
-  forceVisible: true,
-});
+// new SimpleBar(document.getElementById('blog'), {
+//   autoHide: false,
+//   clickOnTrack: false,
+//   forceEnabled: true,
+//   forceVisible: true,
+// });
 
-new SimpleBar(document.getElementById('contact-textarea'), {
-  autoHide: false,
-  clickOnTrack: false,
-  forceEnabled: true,
-  forceVisible: true,
-});
-
-new SimpleBar(document.getElementById('blog-mobile'), {
-  autoHide: false,
-  clickOnTrack: false,
-  forceEnabled: true,
-  forceVisible: true,
-});
+// new SimpleBar(document.getElementById('contact-textarea'), {
+//   autoHide: false,
+//   clickOnTrack: false,
+//   forceEnabled: true,
+//   forceVisible: true,
+// });
+//
+// new SimpleBar(document.getElementById('blog-mobile'), {
+//   autoHide: false,
+//   clickOnTrack: false,
+//   forceEnabled: true,
+//   forceVisible: true,
+// });
 
 /*________________BRANDS SECTION____________*/
 const brandsSlide = new Splide( '#brands .splide', {
-  pagination: false,
-  arrows: false,
+  pagination: true,
+  arrows: true,
   mediaQuery: 'max',
   breakpoints: {
     768: {
@@ -36,50 +36,56 @@ const brandsSlide = new Splide( '#brands .splide', {
       // rewind: false
     }
   },
-  rewind: true,
-  perPage: 1,
-  speed: 900,
-  start: 0,
-  gap: '1.5rem',
-  snap: true,
-  padding: { right: '15rem' },
-  drag: true,
-});
-const brandsBar = brandsSlide.root.querySelectorAll( '.my-carousel-progress-bar' );
-
-brandsSlide.on( 'mounted move', function () {
-  const end = brandsSlide.Components.Controller.getEnd() + 1;
-  const rate = Math.min( ( brandsSlide.index + 1 ) / end, 1 );
-  brandsBar.forEach(bar => bar.style.width = String( 100 * rate ) + '%');
-} );
-
-brandsSlide.mount();
-
-/*________________TESTIMONIALS SECTION____________*/
-const testimonials = new Splide( '#testimonials .splide', {
-  type: 'fade',
-  perPage: 1,
-  pagination: false,
   classes: {
     arrows: 'splide__arrows',
     arrow : 'splide__arrow',
     prev  : 'splide__arrow--prev left',
     next  : 'splide__arrow--next right',
   },
-  mediaQuery: 'max',
-  breakpoints: {
-    768: {
-      drag: true,
-    }
-  },
+  rewind: false,
+  perPage: 1,
+  speed: 900,
   start: 0,
-  speed: 1200,
-  rewind: true,
+  gap: '1.5rem',
   snap: true,
-  drag: false,
+  // padding: { right: '15rem' },
+  drag: true,
 });
+// const brandsBar = brandsSlide.root.querySelectorAll( '.my-carousel-progress-bar' );
+//
+// brandsSlide.on( 'mounted move', function () {
+//   const end = brandsSlide.Components.Controller.getEnd() + 1;
+//   const rate = Math.min( ( brandsSlide.index + 1 ) / end, 1 );
+//   brandsBar.forEach(bar => bar.style.width = String( 100 * rate ) + '%');
+// } );
 
-testimonials.mount();
+brandsSlide.mount();
+
+/*________________TESTIMONIALS SECTION____________*/
+// const testimonials = new Splide( '#testimonials .splide', {
+//   type: 'fade',
+//   perPage: 1,
+//   pagination: false,
+//   classes: {
+//     arrows: 'splide__arrows',
+//     arrow : 'splide__arrow',
+//     prev  : 'splide__arrow--prev left',
+//     next  : 'splide__arrow--next right',
+//   },
+//   mediaQuery: 'max',
+//   breakpoints: {
+//     768: {
+//       drag: true,
+//     }
+//   },
+//   start: 0,
+//   speed: 1200,
+//   rewind: true,
+//   snap: true,
+//   drag: false,
+// });
+
+// testimonials.mount();
 
 /*________________EVENTS SECTION____________*/
 const events = new Splide( '#events .splide', {
