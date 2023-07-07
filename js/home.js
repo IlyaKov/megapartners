@@ -1,24 +1,24 @@
 /*________________HERO SECTION____________*/
-// new SimpleBar(document.getElementById('blog'), {
-//   autoHide: false,
-//   clickOnTrack: false,
-//   forceEnabled: true,
-//   forceVisible: true,
-// });
+new SimpleBar(document.getElementById('blog'), {
+  autoHide: false,
+  clickOnTrack: false,
+  forceEnabled: true,
+  forceVisible: true,
+});
 
-// new SimpleBar(document.getElementById('contact-textarea'), {
-//   autoHide: false,
-//   clickOnTrack: false,
-//   forceEnabled: true,
-//   forceVisible: true,
-// });
-//
-// new SimpleBar(document.getElementById('blog-mobile'), {
-//   autoHide: false,
-//   clickOnTrack: false,
-//   forceEnabled: true,
-//   forceVisible: true,
-// });
+new SimpleBar(document.getElementById('contact-textarea'), {
+  autoHide: false,
+  clickOnTrack: false,
+  forceEnabled: true,
+  forceVisible: true,
+});
+
+new SimpleBar(document.getElementById('blog-mobile'), {
+  autoHide: false,
+  clickOnTrack: false,
+  forceEnabled: true,
+  forceVisible: true,
+});
 
 /*________________BRANDS SECTION____________*/
 const brandsSlide = new Splide( '#brands .splide', {
@@ -62,30 +62,30 @@ const brandsSlide = new Splide( '#brands .splide', {
 brandsSlide.mount();
 
 /*________________TESTIMONIALS SECTION____________*/
-// const testimonials = new Splide( '#testimonials .splide', {
-//   type: 'fade',
-//   perPage: 1,
-//   pagination: false,
-//   classes: {
-//     arrows: 'splide__arrows',
-//     arrow : 'splide__arrow',
-//     prev  : 'splide__arrow--prev left',
-//     next  : 'splide__arrow--next right',
-//   },
-//   mediaQuery: 'max',
-//   breakpoints: {
-//     768: {
-//       drag: true,
-//     }
-//   },
-//   start: 0,
-//   speed: 1200,
-//   rewind: true,
-//   snap: true,
-//   drag: false,
-// });
+const testimonials = new Splide( '#testimonials .splide', {
+  type: 'fade',
+  perPage: 1,
+  pagination: false,
+  classes: {
+    arrows: 'splide__arrows',
+    arrow : 'splide__arrow',
+    prev  : 'splide__arrow--prev left',
+    next  : 'splide__arrow--next right',
+  },
+  mediaQuery: 'max',
+  breakpoints: {
+    768: {
+      drag: true,
+    }
+  },
+  start: 0,
+  speed: 1200,
+  rewind: true,
+  snap: true,
+  drag: false,
+});
 
-// testimonials.mount();
+testimonials.mount();
 
 /*________________EVENTS SECTION____________*/
 const events = new Splide( '#events .splide', {
@@ -125,16 +125,16 @@ events.on( 'mounted move', function () {
 events.mount();
 
 /*________________COMMISSIONS SECTION____ENABLE-FOR-COMMISSIONS-CALCULATOR________*/
-// new Filter({
-//   activeFilter: document.querySelector('.filters .btn'),
-//   activeClass: 'active',
-//   filters: document.querySelector('.filters'),
-//   filtersTag: 'button',
-//   markerTag: '.filter-marker',
-//   initial_container: document.querySelector('.filtered-content'),
-//   initial_content: document.querySelectorAll('.filtered-content > h3'),
-//   filterInitial: 'eur'
-// })
+new Filter({
+  activeFilter: document.querySelector('.filters .btn'),
+  activeClass: 'active',
+  filters: document.querySelector('.filters'),
+  filtersTag: 'button',
+  markerTag: '.filter-marker',
+  initial_container: document.querySelector('.filtered-content'),
+  initial_content: document.querySelectorAll('.filtered-content > h3'),
+  filterInitial: 'eur'
+})
 
 /*________________CONTACT SECTION____________*/
 const formBtn = document.querySelector('#contact form .cta-btn')

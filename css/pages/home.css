@@ -348,10 +348,14 @@
   top: -39%;
 }
 
-.brand-background object {
+.minimal {
+  width: 85%;
+}
+
+.brand-background img {
   pointer-events: none;
   position: relative;
-  width: 100%;
+  width: 80%;
   z-index: 11;
 }
 
@@ -432,27 +436,42 @@
 }
 
 #brands .splide .splide__arrow {
+  backdrop-filter: blur(10px);
   border: none;
   background: transparent;
-  width: 3rem;
-  height: 3rem;
-}
+  width: 80px;
+  height: 80px;
+  transform: scale(.5, .5);
 
-#brands .splide .splide__arrow.left {
-  left: -4rem;
-}
-
-#brands .splide .splide__arrow.right {
-  right: -4rem;
 }
 
 #brands .splide .splide__arrow svg {
   fill: none;
-  width: 3rem;
-  height: 3rem;
+  width: 100%;
+  height: 100%;
+}
+
+.brand-background .strike-bg {
+  top: -54%;
 }
 
 @media (min-width: 768px) {
+  .brand-background .strike-bg {
+    top: 0;
+  }
+  #brands .splide .splide__arrow {
+    transform: scale(1, 1);
+  }
+  #brands .splide .splide__arrow.left {
+    left: -100px;
+  }
+
+  #brands .splide .splide__arrow.right {
+    right: -100px;
+  }
+  .brand-background img {
+    right: -10rem;
+  }
   #brands .data {
     /*max-width: 90%;*/
   }
